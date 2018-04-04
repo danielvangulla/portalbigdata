@@ -966,7 +966,7 @@ body {
   left: 0;
   border: 2px solid #3c7dcf;
   border-radius: 0;
-  width: 100vw;
+  width: 96vw;
   box-shadow: none;
 }
 
@@ -991,8 +991,8 @@ body {
   top: -20px;
   left: -20px;
   bottom: 0;
-  width: 102.4vw;
-  height: 104vh;
+  width: 97.7vw;
+  height: 99.7vh;
   overflow: hidden;
 }
 .modal-footer {
