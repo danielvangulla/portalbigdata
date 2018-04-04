@@ -240,7 +240,7 @@
 	    */
 	    public function hook_query_index(&$query) {
 	        //Your code here
-            if (CRUDBooster::myPrivilegeId() == 1 or CRUDBooster::myPrivilegeId() == 4) {
+            if (CRUDBooster::myPrivilegeId() > 4) {
                 $query->where('wreports.cms_users_id',CRUDBooster::myID());
             }
 	            
