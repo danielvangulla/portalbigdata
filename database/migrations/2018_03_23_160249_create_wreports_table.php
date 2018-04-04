@@ -20,6 +20,7 @@ class CreateWreportsTable extends Migration
             $table->string('kegiatan');
             $table->string('output');
             $table->string('keterangan');
+            $table->string('foto');
             $table->timestamps();
         });
     }
