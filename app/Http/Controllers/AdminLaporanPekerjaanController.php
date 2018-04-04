@@ -31,10 +31,11 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Nama","name"=>"cms_users_id","join"=>"cms_users,name"];
-			$this->col[] = ["label"=>"Tanggal","name"=>"tanggal",'callback_php'=>'date("d/m/Y",strtotime($row->tanggal))'];
+			$this->col[] = ["label"=>"Tanggal","name"=>"tanggal","callback_php"=>'date("d/m/Y",strtotime($row->tanggal))'];
 			$this->col[] = ["label"=>"Kegiatan","name"=>"kegiatan"];
 			$this->col[] = ["label"=>"Output","name"=>"output"];
 			$this->col[] = ["label"=>"Keterangan","name"=>"keterangan"];
+			$this->col[] = ["label"=>"Foto Kegiatan","name"=>"foto","image"=>true];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
@@ -43,15 +44,15 @@
 			$this->form[] = ['label'=>'Kegiatan','name'=>'kegiatan','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Output','name'=>'output','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Keterangan','name'=>'keterangan','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Foto Kegiatan','name'=>'foto','type'=>'upload','validation'=>'image','width'=>'col-sm-9'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ["label"=>"Cms Users Id","name"=>"cms_users_id","type"=>"select2","required"=>TRUE,"validation"=>"required|integer|min:0","datatable"=>"cms_users,name"];
-			//$this->form[] = ["label"=>"Tanggal","name"=>"tanggal","type"=>"date","required"=>TRUE,"validation"=>"required|date"];
-			//$this->form[] = ["label"=>"Kegiatan","name"=>"kegiatan","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Output","name"=>"output","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Keterangan","name"=>"keterangan","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ['label'=>'Tanggal','name'=>'tanggal','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Kegiatan','name'=>'kegiatan','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Output','name'=>'output','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Keterangan','name'=>'keterangan','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
 			# OLD END FORM
 
 			/* 
