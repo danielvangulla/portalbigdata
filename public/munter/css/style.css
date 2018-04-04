@@ -990,8 +990,8 @@ body {
 }
 .modal-body {
   position: absolute;
-  top: -20px;
-  left: -20px;
+  top: 0;
+  left: 0;
   bottom: 0;
   width: 102.4vw;
   height: 104vh;
