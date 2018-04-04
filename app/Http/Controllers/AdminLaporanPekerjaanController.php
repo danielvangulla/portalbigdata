@@ -31,7 +31,8 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Nama","name"=>"cms_users_id","join"=>"cms_users,name"];
-			$this->col[] = ["label"=>"Tanggal","name"=>"tanggal","callback_php"=>'date("d/m/Y",strtotime($row->tanggal))'];
+            setlocale(LC_TIME, 'id_ID');
+			$this->col[] = ["label"=>"Tanggal","name"=>"tanggal","callback_php"=>'strftime("%a, %e %b %G",strtotime($row->tanggal))'];
 			$this->col[] = ["label"=>"Kegiatan","name"=>"kegiatan"];
 			$this->col[] = ["label"=>"Output","name"=>"output"];
 			$this->col[] = ["label"=>"Keterangan","name"=>"keterangan"];
