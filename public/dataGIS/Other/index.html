@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load leaflet_tags %}
+<head>
+    {% leaflet_js %}
+    {% leaflet_css %}
+    <meta charset="UTF-8">
+    <title>Big Data Studio Kota Manado</title>
+    <style type="text/css">
+        #bdakom {width: 100%; height: 550px;}
+    </style>
+    <script type="text/javascript" src="{% static 'leafajax/leaflet.ajax.js' %}"></script>
+</head>
+<body>
+<marquee>Big Data Studio Kota Manado</marquee>
+<hr>
+<script type="text/javascript">
+    function out_layers(map,options){
+        var datasets_lapangan = new L.GeoJSON.AJAX("{% url 'lapangan' %}",{
+            style: function colors(feature){
+                switch(feature.properties.wajibpajak){
+                    case 'unidentified':
+                        return {
+                            color:'orange',
+                            fillOpacity: 0.8
+                        };
+                    break;
+
+                }
+            },
+            onEachFeature:function(feature,layer){
+                layer.bindPopup(
+				'<div class="col-md-4" style="overflow:auto;"><table class="table table-bordered"><tbody><tr><td style="width:170px;"><div class="pasfoto"><div style="content : url("'+feature.properties.foto.toString()+'"); height : 200px; width : 100%; position : relative;"></div></div></td><td class="text-left"><table class="table table-bordered"><tr><td class="text-right" style="width:30%;">Num:</td><td class="text-left">'+feature.properties.num.toString()+'</td></tr><tr><td class="text-right">No_Rumah:</td><td class="text-left">'+feature.properties.no_rumah.toString()+'</td></tr><tr><td class="text-right">Num1:</td><td class="text-left">'+feature.properties.num_1.toString()+'</td></tr><tr><td class="text-right">No_Provinsi:</td><td class="text-left">'+feature.properties.no_prov.toString()+'</td></tr></table></td></tr><tr><tr><td class="text-right">No_Kota:</td><td class="text-left">'+feature.properties.no_kota.toString()+'</td></tr><tr><td class="text-right">No_Kecamatan:</td><td class="text-left">'+feature.properties.no_kec.toString()+'</td></tr><tr><td class="text-right">No_Kelurahan:</td><td class="text-left">'+feature.properties.no_kelurahan.toString()+'</td></tr><tr><td class="text-right">No_Lingkungan:</td><td class="text-left">'+feature.properties.no_ling.toString()+'</td></tr><tr><td class="text-right">No_Rumah_1:</td><td class="text-left">'+feature.properties.no_rumah_1.toString()+'</td></tr><tr><td class="text-right">Sertifikat:</td><td class="text-left">'+feature.properties.sertifikat.toString()+'</td></tr><tr><td class="text-right">Nama:</td><td class="text-left">'+feature.properties.nama.toString()+'</td></tr><tr><td class="text-right">NOP:</td><td class="text-left">'+feature.properties.nop.toString()+'</td></tr><tr><td class="text-right">Alamat:</td><td class="text-left">'+feature.properties.alamat.toString()+'</td></tr><tr><td class="text-right">Fungsi_Bangunan:</td><td class="text-left">'+feature.properties.fgs_bangun.toString()+'</td></tr><tr><td class="text-right">Konstruksi:</td><td class="text-left">'+feature.properties.konstruksi.toString()+'</td></tr><tr><td class="text-right">Jumlah_Lantai:</td><td class="text-left">'+feature.properties.jlh_lantai.toString()+'</td></tr><tr><td class="text-right">Luas_Bangunan:</td><td class="text-left">'+feature.properties.luas_bgn.toString()+'</td></tr><tr><td class="text-right">NJOP:</td><td class="text-left">'+feature.properties.njop.toString()+'</td></tr><tr><td class="text-right">Luas_Bumi:</td><td class="text-left">'+feature.properties.luas_bumi.toString()+'</td></tr><tr><td class="text-right">NJOP_1:</td><td class="text-left">'+feature.properties.njop1.toString()+'</td></tr><tr><td class="text-right">Nilai_Bangunan:</td><td class="text-left">'+feature.properties.nilai_bng.toString()+'</td></tr><tr><td class="text-right">Pajak_Terhutang:</td><td class="text-left">'+feature.properties.pjk_terhut.toString()+'</td></tr><tr><td class="text-right">NJOP_2:</td><td class="text-left">'+feature.properties.njop2.toString()+'</td></tr><tr><td class="text-right">Ketetapan:</td><td class="text-left">'+feature.properties.ketetapan_field.toString()+'</td></tr><tr><td class="text-right">NIK:</td><td class="text-left">'+feature.properties.nik.toString()+'</td></tr><tr><td class="text-right">Nama_NIK:</td><td class="text-left">'+feature.properties.nama_nik.toString()+'</td></tr><tr><td class="text-right">Multipolygon:</td><td class="text-left">'+feature.properties.geom.toString()+'</td></tr><tr><td class="text-right">Multipolygon:</td><td class="text-left">'+feature.properties.keterangan.toString()+'</td></tr></tr></tbody></table></div>'
+				
+                );
+            }
+        });
+
+        var datasets_incidences = new L.GeoJSON.AJAX("{% url 'incidences' %}",{
+
+        });
+
+        datasets_lapangan.addTo(map);
+        datasets_incidences.addTo(map);
+    }
+</script>
+{% leaflet_map "bdakom" callback="window.out_layers" %}
+</body>
+</html>

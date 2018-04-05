@@ -1,6 +1,8 @@
 /node_modules
 /public/hot
 /public/storage
+/public/dataGIS/images
+/public/dataGIS/shape
 /storage/*.key
 /.idea
 /.vscode
