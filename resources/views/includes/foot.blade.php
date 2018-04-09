@@ -14,6 +14,10 @@
 	
 	<script>
 		
+		$('#bigdata').click(function (){
+			$('#embed').attr('src',window.location.origin+":8100")
+		});
+				
 		$('#rpk').click(function (){
 			$('#embed').attr('src',window.location.origin+"/penduduk/lingkungan")
 		});

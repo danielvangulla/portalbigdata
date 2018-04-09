@@ -674,7 +674,7 @@ div#slider figure {
 }
 
 .icon1 {
-	content : url('../images/icon/icon1_glow.png');
+	content : url('../images/icon/icon1.png');
 	margin-top:-10px;
 	margin-left:25px;
 	width:12vw;
@@ -683,7 +683,7 @@ div#slider figure {
 }
 
 .icon2 {
-	content : url('../images/icon/icon2_glow.png');
+	content : url('../images/icon/icon2.png');
 	margin-top:-10px;
 	margin-left:25px;
 	width:12vw;
@@ -692,7 +692,7 @@ div#slider figure {
 }
 
 .icon3 {
-	content : url('../images/icon/icon3_glow.png');
+	content : url('../images/icon/icon3.png');
 	margin-top:-10px;
 	margin-left:25px;
 	width:12vw;
@@ -701,7 +701,7 @@ div#slider figure {
 }
 
 .icon4 {
-	content : url('../images/icon/icon4_glow.png');
+	content : url('../images/icon/icon4.png');
 	margin-top:-10px;
 	margin-left:25px;
 	width:12vw;
@@ -710,7 +710,7 @@ div#slider figure {
 }
 
 .icon5 {
-	content : url('../images/icon/icon5_glow.png');
+	content : url('../images/icon/icon5.png');
 	margin-top:-10px;
 	margin-left:25px;
 	width:12vw;
@@ -719,7 +719,34 @@ div#slider figure {
 }
 
 .icon6 {
-	content : url('../images/icon/icon6_glow.png');
+	content : url('../images/icon/icon6.png');
+	margin-top:-10px;
+	margin-left:25px;
+	width:12vw;
+	height:24vh;
+	opacity: 0.9;
+}
+
+.iconBigData {
+	content : url('../images/icon/iconBigData.png');
+	margin-top:-10px;
+	margin-left:25px;
+	width:12vw;
+	height:24vh;
+	opacity: 0.9;
+}
+
+.iconBanjir {
+	content : url('../images/icon/iconBanjir.png');
+	margin-top:-10px;
+	margin-left:25px;
+	width:12vw;
+	height:24vh;
+	opacity: 0.9;
+}
+
+.iconLongsor {
+	content : url('../images/icon/iconLongsor.png');
 	margin-top:-10px;
 	margin-left:25px;
 	width:12vw;
