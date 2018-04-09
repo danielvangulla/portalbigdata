@@ -127,6 +127,13 @@
 			$(".icondikomando").attr({style: "content:url('munter/images/icon/dikomando.png')" });
 		});
 	
+		$(".iconBanjir").mouseenter(function(){
+			$(".iconBanjir").attr({style: "content:url('munter/images/icon/iconBanjir_glow.png')" });
+		});
+		$(".iconLongsor").mouseleave(function(){
+			$(".iconLongsor").attr({style: "content:url('munter/images/icon/iconLongsor.png')" });
+		});
+	
 	</script>
 	
 	<script src="{{ URL::asset('js/chart_manado/chart_all_manado.js') }}"></script>
