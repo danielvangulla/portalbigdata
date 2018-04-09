@@ -13,7 +13,7 @@
 	<script type="text/javascript" src="{{ URL::asset('wowslider/engine1/script.js') }}"></script>
 	
 	<script>
-		
+		 
 		$('#bigdata').click(function (){
 			$('#embed').attr('src',window.location.origin+":8100")
 		});
