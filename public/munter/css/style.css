@@ -755,7 +755,7 @@ div#slider figure {
 }
 
 .icontematik {
-	content : url('../images/icon/tematik_glow.png');
+	content : url('../images/icon/tematik.png');
 	margin-top:-10px;
 	margin-left:25px;
 	width:12vw;
@@ -764,7 +764,7 @@ div#slider figure {
 }
 
 .icondikomando {
-	content : url('../images/icon/dikomando_glow.png');
+	content : url('../images/icon/dikomando.png');
 	margin-top:-10px;
 	margin-left:25px;
 	width:12vw;
