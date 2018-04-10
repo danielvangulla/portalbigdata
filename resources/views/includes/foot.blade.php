@@ -15,9 +15,9 @@
 	<script>
 		 
 		$('#bigdata').click(function (){
-			$('#embed').attr('src',window.location.origin+":8100")
+			$('#embed').attr('src',"//"+window.location.origin+":8100")
 		});
-				
+		
 		$('#rpk').click(function (){
 			$('#embed').attr('src',window.location.origin+"/penduduk/lingkungan")
 		});
@@ -139,7 +139,14 @@
 		});
 		$(".iconLongsor").mouseleave(function(){
 			$(".iconLongsor").attr({style: "content:url('munter/images/icon/iconLongsor.png')" });
+		}); 
+	
+		$(".iconBigData").mouseenter(function(){
+			$(".iconBigData").attr({style: "content:url('munter/images/icon/iconBigData_glow.png')" });
 		});
+		$(".iconBigData").mouseleave(function(){
+			$(".iconBigData").attr({style: "content:url('munter/images/icon/iconBigData.png')" });
+		}); 
 	
 	</script>
 	
