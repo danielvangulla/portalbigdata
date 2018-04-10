@@ -130,6 +130,13 @@
 		$(".iconBanjir").mouseenter(function(){
 			$(".iconBanjir").attr({style: "content:url('munter/images/icon/iconBanjir_glow.png')" });
 		});
+		$(".iconBanjir").mouseleave(function(){
+			$(".iconBanjir").attr({style: "content:url('munter/images/icon/iconBanjir.png')" });
+		});
+	
+		$(".iconLongsor").mouseenter(function(){
+			$(".iconLongsor").attr({style: "content:url('munter/images/icon/iconLongsor_glow.png')" });
+		});
 		$(".iconLongsor").mouseleave(function(){
 			$(".iconLongsor").attr({style: "content:url('munter/images/icon/iconLongsor.png')" });
 		});
