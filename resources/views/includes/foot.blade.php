@@ -15,7 +15,7 @@
 	<script>
 		 
 		$('#bigdata').click(function (){
-			$('#embed').attr('src', "//"+window.location.origin+":8100");
+			$('#embed').attr('src', "//"+location.host;+":8100");
 		});
 		
 		$('#rpk').click(function (){
