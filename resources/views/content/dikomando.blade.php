@@ -14,7 +14,7 @@
 
       <!-- body -->
       <div class="modal-body">
-        <embed id="embed" src="http://www.google.co.id" width="100%;" height="100%;"/>
+		<iframe id="embed" src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
       </div>
       <!-- body -->
 
