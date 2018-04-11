@@ -14,7 +14,7 @@
 
       <!-- body -->
       <div class="modal-body">
-        <iframe id="embed" src="https://www.youtube.com" width="100%;" height="100%;"></iframe>
+        <embed id="embed" src="http://36.67.90.85/mioc/vAlpha" width="100%;" height="100%;"/>
       </div>
       <!-- body -->
 
