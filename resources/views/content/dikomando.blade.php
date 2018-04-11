@@ -14,7 +14,7 @@
 
       <!-- body -->
       <div class="modal-body">
-        <iframe id="embed" src="" width="100%;" height="100%;"></iframe>
+        <iframe id="embed" src="https://www.youtube.com" width="100%;" height="100%;"></iframe>
       </div>
       <!-- body -->
 
