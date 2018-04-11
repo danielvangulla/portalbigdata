@@ -729,10 +729,10 @@ div#slider figure {
 
 .iconBigData {
 	content : url('../images/icon/iconBigData.png');
-	margin-top:-10px;
+	margin-top:0px;
 	margin-left:25px;
 	width:12vw;
-	height:24vh;
+	height:20vh;
 	opacity: 0.9;
 }
 
