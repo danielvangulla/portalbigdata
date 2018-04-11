@@ -14,7 +14,7 @@
 
       <!-- body -->
       <div class="modal-body">
-        <embed id="embed" src="http://36.67.90.85/mioc/vAlpha" width="100%;" height="100%;"/>
+        <embed id="embed" src="http://www.google.co.id" width="100%;" height="100%;"/>
       </div>
       <!-- body -->
 
