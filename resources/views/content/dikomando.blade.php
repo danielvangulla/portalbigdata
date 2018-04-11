@@ -14,7 +14,7 @@
 
       <!-- body -->
       <div class="modal-body">
-        <embed id="embed" src="" width="100%;" height="100%;" frameborder="0" allowfullscreen />
+        <embed id="embed" src="http://36.67.90.85/mioc/vAlpha" width="100%;" height="100%;"/>
       </div>
       <!-- body -->
 

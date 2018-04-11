@@ -15,7 +15,7 @@
 	<script>
 		 
 		$('#bigdata').click(function (){
-			var link = window.location.origin+":8100";
+			var link = window.location.host+":8100";
 			$('#embed').attr('src', link);
 		});
 		
