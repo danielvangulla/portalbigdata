@@ -14,7 +14,7 @@
 
       <!-- body -->
       <div class="modal-body">
-        <embed id="embed" src="" width="100%;" height="100%;"/>
+        <embed id="embed" src="" width="100%;" height="100%;" frameborder="0" allowfullscreen />
       </div>
       <!-- body -->
 
