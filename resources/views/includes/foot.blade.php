@@ -15,19 +15,19 @@
 	<script>
 		 
 		$('#bigdata').click(function (){
-			$('#embed').attr('src',"//"+window.location.origin+":8100")
+			$('#embed').attr('src', "//"+location.host+":8100");
 		});
 		
 		$('#rpk').click(function (){
-			$('#embed').attr('src',window.location.origin+"/penduduk/lingkungan")
+			$('#embed').attr('src',window.location.origin+"/penduduk/lingkungan");
 		});
 		
 		$('#banjir').click(function (){
-			$('#embed').attr('src',window.location.origin+"/bencana/banjir")
+			$('#embed').attr('src',window.location.origin+"/bencana/banjir");
 		});
 		
 		$('#longsor').click(function (){
-			$('#embed').attr('src',window.location.origin+"/bencana/longsor")
+			$('#embed').attr('src',window.location.origin+"/bencana/longsor");
 		});
 		
 		$('#dikomando').click(function (){
