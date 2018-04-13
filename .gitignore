@@ -3,7 +3,9 @@
 /public/storage
 /public/dataGIS/images/foto_bangunan
 /public/dataGIS/images/peta_aggregat_penduduk_manado
-/public/dataGIS/shape
+/public/dataGIS/images/peta_tematik
+/public/dataGIS/Shape
+/public/dataGIS/Other
 /storage/*.key
 /.idea
 /.vscode
