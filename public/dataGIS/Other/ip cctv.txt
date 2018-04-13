@@ -1,0 +1,5 @@
+ip cctv
+
+Jakarta MonasArea2 : http://114.110.17.6:8895/
+Jakarta TVRI	   : http://114.110.17.6:8899/
+Jakarta WismaKosgoro : http://114.110.17.6:8896/
