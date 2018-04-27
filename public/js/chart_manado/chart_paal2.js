@@ -1,30 +1,35 @@
 
-function init_chart_bunakenkep1(){
+function init_chart_paal21(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkeppenduduk').length){
+	if ($('.canvaspaal2penduduk').length){
 		
-		$('#alungbanua').text(kelalungbanua);
-		$('#bunaken').text(kelbunaken);
-		$('#mdotua1').text(kelmanadotuasatu);
-		$('#mdotua2').text(kelmanadotuadua);
-		$('#totalbunakenkep').text(allbunakenkep);
+		$('#keldendengandlm').text(keldendengandlm);
+		$('#keldendenganluar').text(keldendenganluar);
+		$('#kelkairagiweru').text(kelkairagiweru);
+		$('#kelmalendeng').text(kelmalendeng);
+		$('#kelpaal2').text(kelpaal2);
+		$('#kelperkamil').text(kelperkamil);
+		$('#kelranomuut').text(kelranomuut);
+		$('#totalpaal2').text(allpaaldua);
 		
 		var chart_doughnut_settings = {
 			type: 'doughnut',
 			tooltipFillColor: "rgba(51, 51, 51, 0.55)",
 			data: {
 				labels: [
-					"Alung Banua",
-					"Bunaken",
-					"Manado Tua 1",
-					"Manado Tua 2"
+					"Dendengan Dalam",
+					"Dendengan Luar",
+					"Kairagi Weru",
+					"Malendeng",
+					"Paal 2",
+					"Perkamil",
+					"Ranomuut"
 				],
 				datasets: [{
-					data: [kelalungbanua, kelbunaken, kelmanadotuasatu, kelmanadotuadua],
+					data: [keldendengandlm, keldendenganluar, kelkairagiweru, kelmalendeng, kelpaal2, kelperkamil, kelranomuut],
 					backgroundColor: [
-						"#BDC3C7",
 						"#26B99A",
 						"#E74C3C",
 						"#9B59B6",
@@ -37,7 +42,6 @@ function init_chart_bunakenkep1(){
 						"#ff9666"
 					],
 					hoverBackgroundColor: [
-						"#CFD4D8",
 						"#36CAAB",
 						"#E95E4F",
 						"#B370CF",
@@ -57,7 +61,7 @@ function init_chart_bunakenkep1(){
 			}
 		}
 	
-		$('.canvasbunakenkeppenduduk').each(function(){
+		$('.canvaspaal2penduduk').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
@@ -69,19 +73,19 @@ function init_chart_bunakenkep1(){
 }
 
 
-function init_chart_bunakenkep2(){
+function init_chart_paal22(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkepmatapencaharian').length){
+	if ($('.canvaspaal2matapencaharian').length){
 		
-		$('#bunakenkeppertanian').text(bunakenkeppertanian);
-		$('#bunakenkepperikanan').text(bunakenkepperikanan);
-		$('#bunakenkeptambang').text(bunakenkeptambang);
-		$('#bunakenkepindustri').text(bunakenkepindustri);
-		$('#bunakenkepkonstruksi').text(bunakenkepkonstruksi);
-		$('#bunakenkepperdagangan').text(bunakenkepperdagangan);
-		$('#bunakenkeppemerintahan').text(bunakenkeppemerintahan);
+		$('#paal2pertanian').text(paal2pertanian);
+		$('#paal2perikanan').text(paal2perikanan);
+		$('#paal2tambang').text(paal2tambang);
+		$('#paal2industri').text(paal2industri);
+		$('#paal2konstruksi').text(paal2konstruksi);
+		$('#paal2perdagangan').text(paal2perdagangan);
+		$('#paal2pemerintahan').text(paal2pemerintahan);
 		
 		
 		var chart_doughnut_settings = {
@@ -98,7 +102,7 @@ function init_chart_bunakenkep2(){
 					"Pemerintahan"
 				],
 				datasets: [{
-					data: [bunakenkeppertanian, bunakenkepperikanan, bunakenkeptambang, bunakenkepindustri, bunakenkepkonstruksi, bunakenkepperdagangan, bunakenkeppemerintahan],
+					data: [paal2pertanian, paal2perikanan, paal2tambang, paal2industri, paal2konstruksi, paal2perdagangan, paal2pemerintahan],
 					backgroundColor: [
 						"#BDC3C7",
 						"#26B99A",
@@ -133,7 +137,7 @@ function init_chart_bunakenkep2(){
 			}
 		}
 	
-		$('.canvasbunakenkepmatapencaharian').each(function(){
+		$('.canvaspaal2matapencaharian').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
@@ -145,15 +149,15 @@ function init_chart_bunakenkep2(){
 }
 
 
-function init_chart_bunakenkep3(){
+function init_chart_paal23(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkeppendidikan').length){
+	if ($('.canvaspaal2pendidikan').length){
 		
-		$('#bunakenkepsekolahdlm').text(bunakenkepdalam);
-		$('#bunakenkepsekolahluar').text(bunakenkepluar);
-		$('#bunakenkepsekolahtdk').text(bunakenkeptidak);
+		$('#paal2sekolahdlm').text(paal2dalam);
+		$('#paal2sekolahluar').text(paal2luar);
+		$('#paal2sekolahtdk').text(paal2tidak);
 		
 		var chart_doughnut_settings = {
 			type: 'doughnut',
@@ -165,7 +169,7 @@ function init_chart_bunakenkep3(){
 					"Tdk Sekolah"
 				],
 				datasets: [{
-					data: [bunakenkepdalam, bunakenkepluar, bunakenkeptidak],
+					data: [paal2dalam, paal2luar, paal2tidak],
 					backgroundColor: [
 						"#BDC3C7",
 						"#26B99A",
@@ -184,7 +188,7 @@ function init_chart_bunakenkep3(){
 			}
 		}
 	
-		$('.canvasbunakenkeppendidikan').each(function(){
+		$('.canvaspaal2pendidikan').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
@@ -196,17 +200,19 @@ function init_chart_bunakenkep3(){
 }
 
 
-function init_chart_bunakenkep4(){
+
+
+function init_chart_paal24(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkepagama').length){
+	if ($('.canvaspaal2agama').length){
 		
-		$('#katolikbunakenkep').text(katolikbunakenkep);
-		$('#protestanbunakenkep').text(protestanbunakenkep);
-		$('#islambunakenkep').text(islambunakenkep);
-		$('#hindubunakenkep').text(hindubunakenkep);
-		$('#budhabunakenkep').text(budhabunakenkep);
+		$('#katolikpaal2').text(katolikpaal2);
+		$('#protestanpaal2').text(protestanpaal2);
+		$('#islampaal2').text(islampaal2);
+		$('#hindupaal2').text(hindupaal2);
+		$('#budhapaal2').text(budhapaal2);
 		
 		var chart_doughnut_settings = {
 			type: 'doughnut',
@@ -220,7 +226,7 @@ function init_chart_bunakenkep4(){
 					"Budha"
 				],
 				datasets: [{
-					data: [katolikbunakenkep, protestanbunakenkep, islambunakenkep, hindubunakenkep, budhabunakenkep],
+					data: [katolikpaal2, protestanpaal2, islampaal2, hindupaal2, budhapaal2],
 					backgroundColor: [
 						"#E74C3C",
 						"#9B59B6",
@@ -243,7 +249,7 @@ function init_chart_bunakenkep4(){
 			}
 		}
 	
-		$('.canvasbunakenkepagama').each(function(){
+		$('.canvaspaal2agama').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
@@ -255,20 +261,20 @@ function init_chart_bunakenkep4(){
 }
 
 
-function init_chart_bunakenkep5(){
+function init_chart_paal25(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkeppendakhir').length){
+	if ($('.canvaspaal2pendakhir').length){
 		
-		$('#bunakenkepsd').text(bunakenkepsd);
-		$('#bunakenkepsmp').text(bunakenkepsmp);
-		$('#bunakenkepsma').text(bunakenkepsma);
-		$('#bunakenkepd1d2').text(bunakenkepd1d2);
-		$('#bunakenkepd3').text(bunakenkepd3);
-		$('#bunakenkepd4s1').text(bunakenkepd4s1);
-		$('#bunakenkeps2').text(bunakenkeps2);
-		$('#bunakenkeps3').text(bunakenkeps3);
+		$('#paal2sd').text(paal2sd);
+		$('#paal2smp').text(paal2smp);
+		$('#paal2sma').text(paal2sma);
+		$('#paal2d1d2').text(paal2d1d2);
+		$('#paal2d3').text(paal2d3);
+		$('#paal2d4s1').text(paal2d4s1);
+		$('#paal2s2').text(paal2s2);
+		$('#paal2s3').text(paal2s3);
 		
 		var chart_doughnut_settings = {
 			type: 'doughnut',
@@ -285,7 +291,7 @@ function init_chart_bunakenkep5(){
 					"S3"
 				],
 				datasets: [{
-					data: [bunakenkepsd, bunakenkepsmp, bunakenkepsma, bunakenkepd1d2, bunakenkepd3, bunakenkepd4s1, bunakenkeps2, bunakenkeps3],
+					data: [paal2sd, paal2smp, paal2sma, paal2d1d2, paal2d3, paal2d4s1, paal2s2, paal2s3],
 					backgroundColor: [
 						"#9B59B6",
 						"#3498DB",
@@ -314,7 +320,7 @@ function init_chart_bunakenkep5(){
 			}
 		}
 	
-		$('.canvasbunakenkeppendakhir').each(function(){
+		$('.canvaspaal2pendakhir').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);

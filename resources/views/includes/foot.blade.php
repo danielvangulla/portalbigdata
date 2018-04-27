@@ -7,7 +7,27 @@
 	<script type="text/javascript" src="{{ URL::asset('munter/fancybox/jquery.fancybox.pack-v=2.1.5.js') }}"></script>
 	<script src="{{ URL::asset('munter/js/script.js') }}"></script>
 	<script src="{{ URL::asset('js/chart.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/global_variable.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/global_variable_agama.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/global_variable_matapencaharian.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/global_variable_penduduk.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/global_variable_statuspendidikan.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/global_variable_tempatpendidikan.js') }}"></script>
+	
+	
+	<script src="{{ URL::asset('js/chart_manado/chart_all_manado.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_bunaken.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_bunaken_kep.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_malalayang.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_mapanget.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_paal2.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_sario.js') }}"></script>
+	<!--script src="{{ URL::asset('js/chart_manado/chart_singkil.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_tikala.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_tuminting.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_wanea.js') }}"></script>
+	<script src="{{ URL::asset('js/chart_manado/chart_wenang.js') }}"></script-->
+	
+	<script src="{{ URL::asset('js/chart_manado/chart_init.js') }}"></script>
 	
 	<script type="text/javascript" src="{{ URL::asset('wowslider/engine1/wowslider.js') }}"></script>
 	<script type="text/javascript" src="{{ URL::asset('wowslider/engine1/script.js') }}"></script>
@@ -47,27 +67,11 @@
 				}
 			});
 		
-			init_chart_bunaken1();
-			init_chart_bunaken2();
-			init_chart_bunaken3();
-			
-			init_chart_bunakenkep1();
-			init_chart_bunakenkep2();
-			init_chart_bunakenkep3();
-			
-			init_chart_malalayang1();
-			init_chart_malalayang2();
-			init_chart_malalayang3();
-			
-			init_chart_manado1();
-			init_chart_manado2();
+			chart_init();
 			
 		});
 		
-		function content1()
-		{
-			alert('test');
-		}
+		
 	</script>
 	<script>
 	
@@ -149,17 +153,4 @@
 		}); 
 	
 	</script>
-	
-	<script src="{{ URL::asset('js/chart_manado/chart_all_manado.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_bunaken.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_bunaken_kep.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_malalayang.js') }}"></script>
-	<!--script src="{{ URL::asset('js/chart_manado/chart_mapanget.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_paal2.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_sario.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_singkil.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_tikala.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_tuminting.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_wanea.js') }}"></script>
-	<script src="{{ URL::asset('js/chart_manado/chart_wenang.js') }}"></script-->
 	

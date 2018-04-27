@@ -17,57 +17,57 @@
 				
 			</div><!-- /row -->
 			
-			<div class="row content-row" style="margin-top:-80px;">
+			<div class="row content-row" style="margin-top: -40px; background:lightblue;">
 			
 				<div class="col-md-4 col-sm-4 col-xs-12">
 				  <div class="x_panel tile fixed_height_320 overflow_hidden">
-					<div class="x_title">
+					<div class="x_title" style="color:black;">
 					  <h2>Kepadatan Penduduk <br>(Jiwa)</h2>
 					</div>
 					<div class="x_content" style="margin-top:0px;">
 					  <table class="" style="width:100%">
 						<tr>
 						  <th style="width:37%;">
-							<canvas class="canvasbunakenpenduduk" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+							<canvas class="canvasbunakenpenduduk" height="140" width="140" style="margin: 5px 10px 10px 0"></canvas>
 						  </th>
 						  <th>
-							<table class="tile_info">
+							<table class="tile_info" style="color:black;">
 								<tbody>
 								  <tr>
-									<td>Bailang </td>
+									<td class="text-right">Bailang </td>
 									<td>
 										<span style="margin-left:10px;" id="bailang"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Meras </td>
+									<td class="text-right">Meras </td>
 									<td>
 										<span style="margin-left:10px;" id="meras"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Molas </td>
+									<td class="text-right">Molas </td>
 									<td>
 										<span style="margin-left:10px;" id="molas"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Pandu </td>
+									<td class="text-right">Pandu </td>
 									<td>
 										<span style="margin-left:10px;" id="pandu"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Tongkaina </td>
+									<td class="text-right">Tongkaina </td>
 									<td>
 										<span style="margin-left:10px;" id="tongkaina"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>------</td>
+									<td class="text-right">------</td>
 								  </tr>
 								  <tr>
-									<td>Total </td>
+									<td class="text-right">Total </td>
 									<td>
 										<span style="margin-left:10px;" id="totalbunaken"> </span>
 									</td>
@@ -83,56 +83,56 @@
 				
 				<div class="col-md-4 col-sm-4 col-xs-12">
 				  <div class="x_panel tile fixed_height_320 overflow_hidden">
-					<div class="x_title">
+					<div class="x_title" style="color:black;">
 					  <h2>Mata Pencaharian <br>(KK)</h2>
 					</div>
 					<div class="x_content" style="margin-top:0px;">
 					  <table class="" style="width:100%">
 						<tr>
 						  <th style="width:37%;">
-							<canvas class="canvasbunakenmatapencaharian" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+							<canvas class="canvasbunakenmatapencaharian" height="140" width="140" style="margin: 5px 10px 10px 0"></canvas>
 						  </th>
 						  <th>
-							<table class="tile_info">
+							<table class="tile_info" style="color:black;">
 								<tbody>
 								  <tr>
-									<td>Pertanian </td>
+									<td class="text-right">Pertanian </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakenpertanian"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Perikanan </td>
+									<td class="text-right">Perikanan </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakenperikanan"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Tambang </td>
+									<td class="text-right">Tambang </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakentambang"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>industri </td>
+									<td class="text-right">industri </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakenindustri"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Konstruksi </td>
+									<td class="text-right">Konstruksi </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakenkonstruksi"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Perdagangan </td>
+									<td class="text-right">Perdagangan </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakenperdagangan"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Pemerintahan </td>
+									<td class="text-right">Pemerintahan </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakenpemerintahan"> </span>
 									</td>
@@ -146,6 +146,66 @@
 				  </div>
 				</div>
 				
+				
+				<div class="col-md-4 col-sm-4 col-xs-12">
+				  <div class="x_panel tile fixed_height_320 overflow_hidden">
+					<div class="x_title" style="color:black;">
+					  <h2>Agama Penduduk <br>(Jiwa)</h2>
+					</div>
+					<div class="x_content">
+					  <table class="" style="width:100%">
+						<tr>
+						  <th style="width:37%;">
+							<canvas class="canvasbunakenagama" height="140" width="140" style="margin: 5px 10px 10px 0"></canvas>
+						  </th>
+						  <th>
+							<table class="tile_info" style="color:black;">
+								<tbody>
+								  <tr>
+									<td class="text-right">Katolik </td>
+									<td>
+										<span style="margin-left:10px;" id="katolikbunaken"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">Protestan </td>
+									<td>
+										<span style="margin-left:10px;" id="protestanbunaken"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">Islam </td>
+									<td>
+										<span style="margin-left:10px;" id="islambunaken"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">Hindu </td>
+									<td>
+										<span style="margin-left:10px;" id="hindubunaken"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">Budha </td>
+									<td>
+										<span style="margin-left:10px;" id="budhabunaken"> </span>
+									</td>
+								  </tr>
+								</tbody>
+							</table>
+						  </th>
+						</tr>
+					  </table>
+					</div>
+				  </div>
+			    </div>
+			</div><!-- /row -->
+			
+			<div class="row content-row" style="margin-top:0px; background:grey;">
+			
+				<div class="col-md-2 col-sm-2 col-xs-12">
+				</div>
+				
 				<div class="col-md-4 col-sm-4 col-xs-12">
 				  <div class="x_panel tile fixed_height_320 overflow_hidden">
 					<div class="x_title">
@@ -155,25 +215,25 @@
 					  <table class="" style="width:100%">
 						<tr>
 						  <th style="width:37%;">
-							<canvas class="canvasbunakenpendidikan" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+							<canvas class="canvasbunakenpendidikan" height="140" width="140" style="margin: 5px 10px 10px 0"></canvas>
 						  </th>
 						  <th>
-							<table class="tile_info">
+							<table class="tile_info" style="color:white;">
 								<tbody>
 								  <tr>
-									<td>Dalam Kelurahan </td>
+									<td class="text-right">Dalam Kelurahan </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakensekolahdlm"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Luar Kelurahan </td>
+									<td class="text-right">Luar Kelurahan </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakensekolahluar"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Tidak Sekolah </td>
+									<td class="text-right">Tidak Sekolah </td>
 									<td>
 										<span style="margin-left:10px;" id="bunakensekolahtdk"> </span>
 									</td>
@@ -188,7 +248,84 @@
 				  </div>
 				</div>
 				
+				
+				<div class="col-md-4 col-sm-4 col-xs-12">
+				  <div class="x_panel tile fixed_height_320 overflow_hidden">
+					<div class="x_title">
+					  <h2>Status Pendidikan <br>(Jiwa)</h2>
+					</div>
+					<div class="x_content">
+					  <table class="" style="width:100%">
+						<tr>
+						  <th style="width:37%;">
+							<canvas class="canvasbunakenpendakhir" height="140" width="140" style="margin: 5px 10px 10px 25px"></canvas>
+						  </th>
+						  <th>
+							<table class="tile_info" style="color:white;">
+								<tbody>
+								  <tr>
+									<td class="text-right">SD </td>
+									<td>
+										<span style="margin-left:10px;" id="bunakensd"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">SMP </td>
+									<td>
+										<span style="margin-left:10px;" id="bunakensmp"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">SMA/SMK </td>
+									<td>
+										<span style="margin-left:10px;" id="bunakensma"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">D1/D2 </td>
+									<td>
+										<span style="margin-left:10px;" id="bunakend1d2"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">D3 </td>
+									<td>
+										<span style="margin-left:10px;" id="bunakend3"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">D4/S1 </td>
+									<td>
+										<span style="margin-left:10px;" id="bunakend4s1"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">S2 </td>
+									<td>
+										<span style="margin-left:10px;" id="bunakens2"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">S3 </td>
+									<td>
+										<span style="margin-left:10px;" id="bunakens3"> </span>
+									</td>
+								  </tr>
+								</tbody>
+							</table>
+						  </th>
+						</tr>
+					  </table>
+					</div>
+				  </div>
+			    </div>
+				
+				
+				<div class="col-md-2 col-sm-2 col-xs-12">
+				</div>
+				
 			</div><!-- /row -->
+			
 		</div><!-- /container -->
 	</div><!-- /slide2 -->
 	

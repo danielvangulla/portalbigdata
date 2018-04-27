@@ -1,30 +1,41 @@
 
-function init_chart_bunakenkep1(){
+function init_chart_mapanget1(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkeppenduduk').length){
+	if ($('.canvasmapangetpenduduk').length){
 		
-		$('#alungbanua').text(kelalungbanua);
-		$('#bunaken').text(kelbunaken);
-		$('#mdotua1').text(kelmanadotuasatu);
-		$('#mdotua2').text(kelmanadotuadua);
-		$('#totalbunakenkep').text(allbunakenkep);
+		$('#kelbengkol').text(kelbengkol);
+		$('#kelbuha').text(kelbuha);
+		$('#kelkairagi1').text(kelkairagi1);
+		$('#kelkairagi2').text(kelkairagi2);
+		$('#kelkimaatas').text(kelkimaatas);
+		$('#kellapangan').text(kellapangan);
+		$('#kelmapangetbarat').text(kelmapangetbarat);
+		$('#kelpanikibawah').text(kelpanikibawah);
+		$('#kelpaniki2').text(kelpaniki2);
+		$('#kelpaniki1').text(kelpaniki1);
+		$('#totalmapanget').text(allmapanget);
 		
 		var chart_doughnut_settings = {
 			type: 'doughnut',
 			tooltipFillColor: "rgba(51, 51, 51, 0.55)",
 			data: {
 				labels: [
-					"Alung Banua",
-					"Bunaken",
-					"Manado Tua 1",
-					"Manado Tua 2"
+					"Bengkol",
+					"Buha",
+					"Kairagi 1",
+					"Kairagi 2",
+					"Kima Atas",
+					"Lapangan",
+					"Mapanget Barat",
+					"Paniki Bawah",
+					"Paniki 1",
+					"Paniki 2"
 				],
 				datasets: [{
-					data: [kelalungbanua, kelbunaken, kelmanadotuasatu, kelmanadotuadua],
+					data: [kelbengkol, kelbuha, kelkairagi1, kelkairagi2, kelkimaatas, kellapangan, kelmapangetbarat, kelpanikibawah, kelpaniki2, kelpaniki1],
 					backgroundColor: [
-						"#BDC3C7",
 						"#26B99A",
 						"#E74C3C",
 						"#9B59B6",
@@ -37,7 +48,6 @@ function init_chart_bunakenkep1(){
 						"#ff9666"
 					],
 					hoverBackgroundColor: [
-						"#CFD4D8",
 						"#36CAAB",
 						"#E95E4F",
 						"#B370CF",
@@ -57,7 +67,7 @@ function init_chart_bunakenkep1(){
 			}
 		}
 	
-		$('.canvasbunakenkeppenduduk').each(function(){
+		$('.canvasmapangetpenduduk').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
@@ -69,19 +79,19 @@ function init_chart_bunakenkep1(){
 }
 
 
-function init_chart_bunakenkep2(){
+function init_chart_mapanget2(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkepmatapencaharian').length){
+	if ($('.canvasmapangetmatapencaharian').length){
 		
-		$('#bunakenkeppertanian').text(bunakenkeppertanian);
-		$('#bunakenkepperikanan').text(bunakenkepperikanan);
-		$('#bunakenkeptambang').text(bunakenkeptambang);
-		$('#bunakenkepindustri').text(bunakenkepindustri);
-		$('#bunakenkepkonstruksi').text(bunakenkepkonstruksi);
-		$('#bunakenkepperdagangan').text(bunakenkepperdagangan);
-		$('#bunakenkeppemerintahan').text(bunakenkeppemerintahan);
+		$('#mapangetpertanian').text(mapangetpertanian);
+		$('#mapangetperikanan').text(mapangetperikanan);
+		$('#mapangettambang').text(mapangettambang);
+		$('#mapangetindustri').text(mapangetindustri);
+		$('#mapangetkonstruksi').text(mapangetkonstruksi);
+		$('#mapangetperdagangan').text(mapangetperdagangan);
+		$('#mapangetpemerintahan').text(mapangetpemerintahan);
 		
 		
 		var chart_doughnut_settings = {
@@ -98,7 +108,7 @@ function init_chart_bunakenkep2(){
 					"Pemerintahan"
 				],
 				datasets: [{
-					data: [bunakenkeppertanian, bunakenkepperikanan, bunakenkeptambang, bunakenkepindustri, bunakenkepkonstruksi, bunakenkepperdagangan, bunakenkeppemerintahan],
+					data: [mapangetpertanian, mapangetperikanan, mapangettambang, mapangetindustri, mapangetkonstruksi, mapangetperdagangan, mapangetpemerintahan],
 					backgroundColor: [
 						"#BDC3C7",
 						"#26B99A",
@@ -133,7 +143,7 @@ function init_chart_bunakenkep2(){
 			}
 		}
 	
-		$('.canvasbunakenkepmatapencaharian').each(function(){
+		$('.canvasmapangetmatapencaharian').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
@@ -145,15 +155,15 @@ function init_chart_bunakenkep2(){
 }
 
 
-function init_chart_bunakenkep3(){
+function init_chart_mapanget3(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkeppendidikan').length){
+	if ($('.canvasmapangetpendidikan').length){
 		
-		$('#bunakenkepsekolahdlm').text(bunakenkepdalam);
-		$('#bunakenkepsekolahluar').text(bunakenkepluar);
-		$('#bunakenkepsekolahtdk').text(bunakenkeptidak);
+		$('#mapangetsekolahdlm').text(mapangetdalam);
+		$('#mapangetsekolahluar').text(mapangetluar);
+		$('#mapangetsekolahtdk').text(mapangettidak);
 		
 		var chart_doughnut_settings = {
 			type: 'doughnut',
@@ -165,7 +175,7 @@ function init_chart_bunakenkep3(){
 					"Tdk Sekolah"
 				],
 				datasets: [{
-					data: [bunakenkepdalam, bunakenkepluar, bunakenkeptidak],
+					data: [mapangetdalam, mapangetluar, mapangettidak],
 					backgroundColor: [
 						"#BDC3C7",
 						"#26B99A",
@@ -184,7 +194,7 @@ function init_chart_bunakenkep3(){
 			}
 		}
 	
-		$('.canvasbunakenkeppendidikan').each(function(){
+		$('.canvasmapangetpendidikan').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
@@ -196,17 +206,19 @@ function init_chart_bunakenkep3(){
 }
 
 
-function init_chart_bunakenkep4(){
+
+
+function init_chart_mapanget4(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkepagama').length){
+	if ($('.canvasmapangetagama').length){
 		
-		$('#katolikbunakenkep').text(katolikbunakenkep);
-		$('#protestanbunakenkep').text(protestanbunakenkep);
-		$('#islambunakenkep').text(islambunakenkep);
-		$('#hindubunakenkep').text(hindubunakenkep);
-		$('#budhabunakenkep').text(budhabunakenkep);
+		$('#katolikmapanget').text(katolikmapanget);
+		$('#protestanmapanget').text(protestanmapanget);
+		$('#islammapanget').text(islammapanget);
+		$('#hindumapanget').text(hindumapanget);
+		$('#budhamapanget').text(budhamapanget);
 		
 		var chart_doughnut_settings = {
 			type: 'doughnut',
@@ -220,7 +232,7 @@ function init_chart_bunakenkep4(){
 					"Budha"
 				],
 				datasets: [{
-					data: [katolikbunakenkep, protestanbunakenkep, islambunakenkep, hindubunakenkep, budhabunakenkep],
+					data: [katolikmapanget, protestanmapanget, islammapanget, hindumapanget, budhamapanget],
 					backgroundColor: [
 						"#E74C3C",
 						"#9B59B6",
@@ -243,7 +255,7 @@ function init_chart_bunakenkep4(){
 			}
 		}
 	
-		$('.canvasbunakenkepagama').each(function(){
+		$('.canvasmapangetagama').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
@@ -255,20 +267,20 @@ function init_chart_bunakenkep4(){
 }
 
 
-function init_chart_bunakenkep5(){
+function init_chart_mapanget5(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	if ($('.canvasbunakenkeppendakhir').length){
+	if ($('.canvasmapangetpendakhir').length){
 		
-		$('#bunakenkepsd').text(bunakenkepsd);
-		$('#bunakenkepsmp').text(bunakenkepsmp);
-		$('#bunakenkepsma').text(bunakenkepsma);
-		$('#bunakenkepd1d2').text(bunakenkepd1d2);
-		$('#bunakenkepd3').text(bunakenkepd3);
-		$('#bunakenkepd4s1').text(bunakenkepd4s1);
-		$('#bunakenkeps2').text(bunakenkeps2);
-		$('#bunakenkeps3').text(bunakenkeps3);
+		$('#mapangetsd').text(mapangetsd);
+		$('#mapangetsmp').text(mapangetsmp);
+		$('#mapangetsma').text(mapangetsma);
+		$('#mapangetd1d2').text(mapangetd1d2);
+		$('#mapangetd3').text(mapangetd3);
+		$('#mapangetd4s1').text(mapangetd4s1);
+		$('#mapangets2').text(mapangets2);
+		$('#mapangets3').text(mapangets3);
 		
 		var chart_doughnut_settings = {
 			type: 'doughnut',
@@ -285,7 +297,7 @@ function init_chart_bunakenkep5(){
 					"S3"
 				],
 				datasets: [{
-					data: [bunakenkepsd, bunakenkepsmp, bunakenkepsma, bunakenkepd1d2, bunakenkepd3, bunakenkepd4s1, bunakenkeps2, bunakenkeps3],
+					data: [mapangetsd, mapangetsmp, mapangetsma, mapangetd1d2, mapangetd3, mapangetd4s1, mapangets2, mapangets3],
 					backgroundColor: [
 						"#9B59B6",
 						"#3498DB",
@@ -314,7 +326,7 @@ function init_chart_bunakenkep5(){
 			}
 		}
 	
-		$('.canvasbunakenkeppendakhir').each(function(){
+		$('.canvasmapangetpendakhir').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);

@@ -83,33 +83,15 @@ function init_chart_malalayang2(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	console.log('init_chart_doughnut');
-	
 	if ($('.canvasmalalayangmatapencaharian').length){
 		
-		var pertanian = 21;
-		var perikanan = 5;
-		var tambang = 0;
-		var industri = 5;
-		var konstruksi = 187;
-		var perdagangan = 2175;
-		var pemerintahan = 796;
-		
-		allpertanian += pertanian;
-		allperikanan += perikanan;
-		allpertambangan += tambang;
-		allindustri += industri;
-		allkonstruksi += konstruksi;
-		allperdagangan += perdagangan;
-		allpemerintahan += pemerintahan;
-		
-		$('#malalayangpertanian').text(pertanian);
-		$('#malalayangperikanan').text(perikanan);
-		$('#malalayangtambang').text(tambang);
-		$('#malalayangindustri').text(industri);
-		$('#malalayangkonstruksi').text(konstruksi);
-		$('#malalayangperdagangan').text(perdagangan);
-		$('#malalayangpemerintahan').text(pemerintahan);
+		$('#malalayangpertanian').text(malalayangpertanian);
+		$('#malalayangperikanan').text(malalayangperikanan);
+		$('#malalayangtambang').text(malalayangtambang);
+		$('#malalayangindustri').text(malalayangindustri);
+		$('#malalayangkonstruksi').text(malalayangkonstruksi);
+		$('#malalayangperdagangan').text(malalayangperdagangan);
+		$('#malalayangpemerintahan').text(malalayangpemerintahan);
 		
 		
 		var chart_doughnut_settings = {
@@ -126,7 +108,7 @@ function init_chart_malalayang2(){
 					"Pemerintahan"
 				],
 				datasets: [{
-					data: [pertanian, perikanan, tambang, industri, konstruksi, perdagangan, pemerintahan],
+					data: [malalayangpertanian, malalayangperikanan, malalayangtambang, malalayangindustri, malalayangkonstruksi, malalayangperdagangan, malalayangpemerintahan],
 					backgroundColor: [
 						"#BDC3C7",
 						"#26B99A",
@@ -177,19 +159,11 @@ function init_chart_malalayang3(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	console.log('init_chart_doughnut');
-	
 	if ($('.canvasmalalayangpendidikan').length){
 		
-		var dalam = 1034;
-		var luar = 249;
-		var tidak = 5;
-		
-		var all = dalam + luar + tidak;
-		
-		$('#malalayangsekolahdlm').text(dalam);
-		$('#malalayangsekolahluar').text(luar);
-		$('#malalayangsekolahtdk').text(tidak);
+		$('#malalayangsekolahdlm').text(malalayangdalam);
+		$('#malalayangsekolahluar').text(malalayangluar);
+		$('#malalayangsekolahtdk').text(malalayangtidak);
 		
 		var chart_doughnut_settings = {
 			type: 'doughnut',
@@ -201,7 +175,7 @@ function init_chart_malalayang3(){
 					"Tdk Sekolah"
 				],
 				datasets: [{
-					data: [dalam, luar, tidak],
+					data: [malalayangdalam, malalayangluar, malalayangtidak],
 					backgroundColor: [
 						"#BDC3C7",
 						"#26B99A",
@@ -221,6 +195,138 @@ function init_chart_malalayang3(){
 		}
 	
 		$('.canvasmalalayangpendidikan').each(function(){
+			
+			var chart_element = $(this);
+			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
+			
+		});			
+		
+	}  
+   
+}
+
+
+
+
+function init_chart_malalayang4(){
+			
+	if( typeof (Chart) === 'undefined'){ return; }
+	
+	if ($('.canvasmalalayangagama').length){
+		
+		$('#katolikmalalayang').text(katolikmalalayang);
+		$('#protestanmalalayang').text(protestanmalalayang);
+		$('#islammalalayang').text(islammalalayang);
+		$('#hindumalalayang').text(hindumalalayang);
+		$('#budhamalalayang').text(budhamalalayang);
+		
+		var chart_doughnut_settings = {
+			type: 'doughnut',
+			tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+			data: {
+				labels: [
+					"Katolik",
+					"Protestan",
+					"Islam",
+					"Hindu",
+					"Budha"
+				],
+				datasets: [{
+					data: [katolikmalalayang, protestanmalalayang, islammalalayang, hindumalalayang, budhamalalayang],
+					backgroundColor: [
+						"#E74C3C",
+						"#9B59B6",
+						"#3498DB",
+						"#42f4eb",
+						"#33d66f"
+					],
+					hoverBackgroundColor: [
+						"#E95E4F",
+						"#B370CF",
+						"#49A9EA",
+						"#bcfffc",
+						"#60ff9b"
+					]
+				}]
+			},
+			options: { 
+				legend: false, 
+				responsive: false 
+			}
+		}
+	
+		$('.canvasmalalayangagama').each(function(){
+			
+			var chart_element = $(this);
+			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
+			
+		});			
+		
+	}  
+   
+}
+
+
+function init_chart_malalayang5(){
+			
+	if( typeof (Chart) === 'undefined'){ return; }
+	
+	if ($('.canvasmalalayangpendakhir').length){
+		
+		$('#malalayangsd').text(malalayangsd);
+		$('#malalayangsmp').text(malalayangsmp);
+		$('#malalayangsma').text(malalayangsma);
+		$('#malalayangd1d2').text(malalayangd1d2);
+		$('#malalayangd3').text(malalayangd3);
+		$('#malalayangd4s1').text(malalayangd4s1);
+		$('#malalayangs2').text(malalayangs2);
+		$('#malalayangs3').text(malalayangs3);
+		
+		var chart_doughnut_settings = {
+			type: 'doughnut',
+			tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+			data: {
+				labels: [
+					"SD",
+					"SMP",
+					"SMA",
+					"D1/D2",
+					"D3",
+					"D4/S1",
+					"S2",
+					"S3"
+				],
+				datasets: [{
+					data: [malalayangsd, malalayangsmp, malalayangsma, malalayangd1d2, malalayangd3, malalayangd4s1, malalayangs2, malalayangs3],
+					backgroundColor: [
+						"#9B59B6",
+						"#3498DB",
+						"#42f4eb",
+						"#33d66f",
+						"#0a00ce",
+						"#ff05f6",
+						"#dddd00",
+						"#ff9666"
+					],
+					hoverBackgroundColor: [
+						"#B370CF",
+						"#49A9EA",
+						"#bcfffc",
+						"#60ff9b",
+						"#6159ff",
+						"#ffa8fb",
+						"#ffff66",
+						"#ffc5aa"
+					]
+				}]
+			},
+			options: { 
+				legend: false, 
+				responsive: false 
+			}
+		}
+	
+		$('.canvasmalalayangpendakhir').each(function(){
 			
 			var chart_element = $(this);
 			var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);

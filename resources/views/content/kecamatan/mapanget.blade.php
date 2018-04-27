@@ -30,83 +30,89 @@
 				
 			</div><!-- /row -->
 			
-			<div class="row content-row" style="margin-top:-50px;">
+			<div class="row content-row" style="background:#89e7ff;">
 			
 				<div class="col-md-4 col-sm-4 col-xs-12">
 				  <div class="x_panel tile fixed_height_320 overflow_hidden">
-					<div class="x_title">
+					<div class="x_title" style="color:black;">
 					  <h2>Kepadatan Penduduk <br>(Jiwa)</h2>
 					</div>
 					<div class="x_content" style="margin-top:0px;">
 					  <table class="" style="width:100%">
 						<tr>
 						  <th style="width:37%;">
-							<canvas class="canvasmalalayangpenduduk" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+							<canvas class="canvasmapangetpenduduk" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
 						  </th>
 						  <th>
-							<table class="tile_info">
+							<table class="tile_info" style="color:black;">
 								<tbody>
 								  <tr>
-									<td>Bahu </td>
+									<td class="text-right">Bengkol </td>
 									<td>
-										<span style="margin-left:10px;" id="kelbahu"> </span>
+										<span style="margin-left:10px;" id="kelbengkol"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Batu Kota </td>
+									<td class="text-right">Buha </td>
 									<td>
-										<span style="margin-left:10px;" id="kelbatukota"> </span>
+										<span style="margin-left:10px;" id="kelbuha"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Kleak </td>
+									<td class="text-right">Kairagi 1 </td>
 									<td>
-										<span style="margin-left:10px;" id="kelkleak"> </span>
+										<span style="margin-left:10px;" id="kelkairagi1"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Mlyg 1 Barat </td>
+									<td class="text-right">Kairagi 2 </td>
 									<td>
-										<span style="margin-left:10px;" id="kelmlyg1barat"> </span>
+										<span style="margin-left:10px;" id="kelkairagi2"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Mlyg 1 Timur </td>
+									<td class="text-right">Kima Atas </td>
 									<td>
-										<span style="margin-left:10px;" id="kelmlyg1timur"> </span>
+										<span style="margin-left:10px;" id="kelkimaatas"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Malalayang 1 </td>
+									<td class="text-right">Lapangan </td>
 									<td>
-										<span style="margin-left:10px;" id="kelmlyg1"> </span>
+										<span style="margin-left:10px;" id="kellapangan"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Malalayang 2 </td>
+									<td class="text-right">Mapanget Barat </td>
 									<td>
-										<span style="margin-left:10px;" id="kelmlyg2"> </span>
+										<span style="margin-left:10px;" id="kelmapangetbarat"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Winangun 1 </td>
+									<td class="text-right">Paniki Bawah </td>
 									<td>
-										<span style="margin-left:10px;" id="kelwinangun1"> </span>
+										<span style="margin-left:10px;" id="kelpanikibawah"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Winangun 2 </td>
+									<td class="text-right">Paniki 1 </td>
 									<td>
-										<span style="margin-left:10px;" id="kelwinangun2"> </span>
+										<span style="margin-left:10px;" id="kelpaniki1"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>------</td>
+									<td class="text-right">Paniki 2 </td>
+									<td>
+										<span style="margin-left:10px;" id="kelpaniki2"> </span>
+									</td>
 								  </tr>
 								  <tr>
-									<td>Total </td>
+									<td class="text-right">------</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">Total </td>
 									<td>
-										<span style="margin-left:10px;" id="totalmalalayang"> </span>
+										<span style="margin-left:10px;" id="totalmapanget"> </span>
 									</td>
 								  </tr>
 								</tbody>
@@ -120,58 +126,58 @@
 				
 				<div class="col-md-4 col-sm-4 col-xs-12">
 				  <div class="x_panel tile fixed_height_320 overflow_hidden">
-					<div class="x_title">
+					<div class="x_title" style="color:black;">
 					  <h2>Mata Pencaharian <br>(KK)</h2>
 					</div>
 					<div class="x_content" style="margin-top:0px;">
 					  <table class="" style="width:100%">
 						<tr>
 						  <th style="width:37%;">
-							<canvas class="canvasmalalayangmatapencaharian" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+							<canvas class="canvasmapangetmatapencaharian" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
 						  </th>
 						  <th>
-							<table class="tile_info">
+							<table class="tile_info" style="color:black;">
 								<tbody>
 								  <tr>
-									<td>Pertanian </td>
+									<td class="text-right">Pertanian </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangpertanian"> </span>
+										<span style="margin-left:10px;" id="mapangetpertanian"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Perikanan </td>
+									<td class="text-right">Perikanan </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangperikanan"> </span>
+										<span style="margin-left:10px;" id="mapangetperikanan"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Tambang </td>
+									<td class="text-right">Tambang </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangtambang"> </span>
+										<span style="margin-left:10px;" id="mapangettambang"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>industri </td>
+									<td class="text-right">industri </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangindustri"> </span>
+										<span style="margin-left:10px;" id="mapangetindustri"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Konstruksi </td>
+									<td class="text-right">Konstruksi </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangkonstruksi"> </span>
+										<span style="margin-left:10px;" id="mapangetkonstruksi"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Perdagangan </td>
+									<td class="text-right">Perdagangan </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangperdagangan"> </span>
+										<span style="margin-left:10px;" id="mapangetperdagangan"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Pemerintahan </td>
+									<td class="text-right">Pemerintahan </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangpemerintahan"> </span>
+										<span style="margin-left:10px;" id="mapangetpemerintahan"> </span>
 									</td>
 								  </tr>
 								</tbody>
@@ -183,36 +189,99 @@
 				  </div>
 				</div>
 				
+				
 				<div class="col-md-4 col-sm-4 col-xs-12">
 				  <div class="x_panel tile fixed_height_320 overflow_hidden">
-					<div class="x_title">
+					<div class="x_title" style="color:black;">
+					  <h2>Agama Penduduk <br>(Jiwa)</h2>
+					</div>
+					<div class="x_content">
+					  <table class="" style="width:100%">
+						<tr>
+						  <th style="width:37%;">
+							<canvas class="canvasmapangetagama" height="140" width="140" style="margin: 5px 10px 10px 0"></canvas>
+						  </th>
+						  <th>
+							<table class="tile_info" style="color:black;">
+								<tbody>
+								  <tr>
+									<td class="text-right">Katolik </td>
+									<td>
+										<span style="margin-left:10px;" id="katolikmapanget"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">Protestan </td>
+									<td>
+										<span style="margin-left:10px;" id="protestanmapanget"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">Islam </td>
+									<td>
+										<span style="margin-left:10px;" id="islammapanget"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">Hindu </td>
+									<td>
+										<span style="margin-left:10px;" id="hindumapanget"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">Budha </td>
+									<td>
+										<span style="margin-left:10px;" id="budhamapanget"> </span>
+									</td>
+								  </tr>
+								</tbody>
+							</table>
+						  </th>
+						</tr>
+					  </table>
+					</div>
+				  </div>
+			    </div>
+				
+			
+			</div><!-- /row -->
+			
+			<div class="row content-row" style="background:#f9e5ed;">
+			
+				<div class="col-md-2 col-sm-2 col-xs-12">
+				</div>
+				
+				
+				<div class="col-md-4 col-sm-4 col-xs-12">
+				  <div class="x_panel tile fixed_height_320 overflow_hidden">
+					<div class="x_title" style="color:black;">
 					  <h2>Tempat Pendidikan <br>(KK)</h2>
 					</div>
 					<div class="x_content" style="margin-top:0px;">
 					  <table class="" style="width:100%">
 						<tr>
 						  <th style="width:37%;">
-							<canvas class="canvasmalalayangpendidikan" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+							<canvas class="canvasmapangetpendidikan" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
 						  </th>
 						  <th>
-							<table class="tile_info">
+							<table class="tile_info" style="color:black;">
 								<tbody>
 								  <tr>
-									<td>Dalam Kelurahan </td>
+									<td class="text-right">Dalam Kelurahan </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangsekolahdlm"> </span>
+										<span style="margin-left:10px;" id="mapangetsekolahdlm"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Luar Kelurahan </td>
+									<td class="text-right">Luar Kelurahan </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangsekolahluar"> </span>
+										<span style="margin-left:10px;" id="mapangetsekolahluar"> </span>
 									</td>
 								  </tr>
 								  <tr>
-									<td>Tidak Sekolah </td>
+									<td class="text-right">Tidak Sekolah </td>
 									<td>
-										<span style="margin-left:10px;" id="malalayangsekolahtdk"> </span>
+										<span style="margin-left:10px;" id="mapangetsekolahtdk"> </span>
 									</td>
 								  </tr>
 								  
@@ -224,6 +293,83 @@
 					</div>
 				  </div>
 				</div>
+				
+				
+				
+				<div class="col-md-4 col-sm-4 col-xs-12">
+				  <div class="x_panel tile fixed_height_320 overflow_hidden">
+					<div class="x_title" style="color:black;">
+					  <h2>Status Pendidikan <br>(Jiwa)</h2>
+					</div>
+					<div class="x_content">
+					  <table class="" style="width:100%">
+						<tr>
+						  <th style="width:37%;">
+							<canvas class="canvasmapangetpendakhir" height="140" width="140" style="margin: 5px 10px 10px 25px"></canvas>
+						  </th>
+						  <th>
+							<table class="tile_info" style="color:black;">
+								<tbody>
+								  <tr>
+									<td class="text-right">SD </td>
+									<td>
+										<span style="margin-left:10px;" id="mapangetsd"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">SMP </td>
+									<td>
+										<span style="margin-left:10px;" id="mapangetsmp"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">SMA/SMK </td>
+									<td>
+										<span style="margin-left:10px;" id="mapangetsma"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">D1/D2 </td>
+									<td>
+										<span style="margin-left:10px;" id="mapangetd1d2"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">D3 </td>
+									<td>
+										<span style="margin-left:10px;" id="mapangetd3"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">D4/S1 </td>
+									<td>
+										<span style="margin-left:10px;" id="mapangetd4s1"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">S2 </td>
+									<td>
+										<span style="margin-left:10px;" id="mapangets2"> </span>
+									</td>
+								  </tr>
+								  <tr>
+									<td class="text-right">S3 </td>
+									<td>
+										<span style="margin-left:10px;" id="mapangets3"> </span>
+									</td>
+								  </tr>
+								</tbody>
+							</table>
+						  </th>
+						</tr>
+					  </table>
+					</div>
+				  </div>
+			    </div>
+				
+				<div class="col-md-2 col-sm-2 col-xs-12">
+				</div>
+				
 				
 			</div>
 		</div>

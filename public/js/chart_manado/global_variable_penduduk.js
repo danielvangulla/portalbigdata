@@ -1,27 +1,3 @@
-$.ajax({
-	
-	url: "test.php",
-	type: "post",
-	data: values ,
-	success: function (response) {
-	   // you will get response from your php page (what you echo or print)                 
-
-	},
-	error: function(jqXHR, textStatus, errorThrown) {
-	   console.log(textStatus, errorThrown);
-	}
-
-});
-
-
-
-var allpertanian = 0;
-var allperikanan = 0;
-var allpertambangan = 0;
-var allindustri = 0;
-var allkonstruksi = 0;
-var allperdagangan = 0;
-var allpemerintahan = 0;
 
 var allbunaken 		= 0;
 var allbunakenkep 	= 0;
@@ -36,11 +12,13 @@ var allwanea 		= 0;
 var allwenang 		= 0;
 var allmanado 		= 0;
 
-var kelbailang = 7418;
-var kelmeras = 956;
-var kelmolas = 4182;
-var kelpandu = 5265;
-var keltongkaina = 1583;
+
+
+var kelbailang = 9373;
+var kelmeras = 1159;
+var kelmolas = 6544;
+var kelpandu = 7021;
+var keltongkaina = 2154;
 allbunaken = kelbailang + kelmeras + kelmolas + kelpandu + keltongkaina;
 allmanado += allbunaken;
 
@@ -154,3 +132,4 @@ var kelwenangselatan = 1440;
 var kelwenangutara = 1500
 allwenang = kelbumiberingin + kelcalaca + kelistiqlal + kelkomoluar + kellawangirung + kelmahakeretbrt + kelmahakerettmr + kelpinaesaan + keltelingbawah + keltikalakumaraka + kelwenangselatan + kelwenangutara; 
 allmanado += allwenang;
+
