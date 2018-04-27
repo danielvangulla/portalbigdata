@@ -3,8 +3,6 @@ function init_chart_bunakenkep1(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	console.log('init_chart_doughnut');
-	
 	if ($('.canvasbunakenkeppenduduk').length){
 		
 		$('#alungbanua').text(kelalungbanua);

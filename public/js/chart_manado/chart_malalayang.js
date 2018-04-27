@@ -3,8 +3,6 @@ function init_chart_malalayang1(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	console.log('init_chart_doughnut');
-	
 	if ($('.canvasmalalayangpenduduk').length){
 		
 		$('#kelbahu').text(kelbahu);

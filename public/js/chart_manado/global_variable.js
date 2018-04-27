@@ -1,3 +1,19 @@
+$.ajax({
+	
+	url: "test.php",
+	type: "post",
+	data: values ,
+	success: function (response) {
+	   // you will get response from your php page (what you echo or print)                 
+
+	},
+	error: function(jqXHR, textStatus, errorThrown) {
+	   console.log(textStatus, errorThrown);
+	}
+
+});
+
+
 
 var allpertanian = 0;
 var allperikanan = 0;

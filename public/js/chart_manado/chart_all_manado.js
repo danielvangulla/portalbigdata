@@ -3,8 +3,6 @@ function init_chart_manado1(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	console.log('init_chart_doughnut');
-	
 	if ($('.canvasmanadopenduduk').length){
 		
 		$('#kecbunaken').text(allbunaken);

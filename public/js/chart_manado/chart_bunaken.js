@@ -3,8 +3,6 @@ function init_chart_bunaken1(){
 			
 	if( typeof (Chart) === 'undefined'){ return; }
 	
-	console.log('init_chart_doughnut');
-	
 	if ($('.canvasbunakenpenduduk').length){
 		
 		$('#bailang').text(kelbailang);

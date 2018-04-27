@@ -4,7 +4,7 @@
         @include('includes.head')
     </head>
     <body>
-		@include('content.dikomando')
+		@include('content.modalview')
 		
 		<div id="content">
 		
