@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Video Gallery Template | PrepBootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('video-gallery/bootstrap/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('video-gallery/font-awesome/css/font-awesome.min.css') }}" />
+
+	<link href="{{ URL::asset('css/video-js.css') }}" rel="stylesheet">
+	<script src="{{ URL::asset('js/video.js') }}"></script>
+	
+    <script type="text/javascript" src="{{ URL::asset('video-gallery/js/jquery-1.10.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('video-gallery/bootstrap/js/bootstrap.min.js') }}"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>BIG DATA <small>CCTV Gallery</small></h1>
+</div>
+
+<!-- Video Gallery - START -->
+<div class="container-fluid pb-video-container">
+    <div class="col-md-10 col-md-offset-1">
+        <h3 class="text-center">CCTV Kota Manado</h3>
+        <div class="row pb-row">
+            <div class="col-md-3 pb-video">
+				<video id="cctv1" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/adipura1.stream" type='application/x-mpegURL'>
+				</video>
+                <label class="form-control label-warning text-center">Adipura 1</label>
+            </div>
+			
+            <div class="col-md-3 pb-video">
+				<video id="cctv2" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/adipura2.stream" type='application/x-mpegURL'>
+				</video>
+                <label class="form-control label-warning text-center">Adipura 2</label>
+            </div>
+			
+            <div class="col-md-3 pb-video">
+				<video id="cctv3" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/aryaduta.stream" type='application/x-mpegURL'>
+				</video>
+                <label class="form-control label-warning text-center">Aryaduta</label>
+            </div>
+			
+            <div class="col-md-3 pb-video">
+				<video id="cctv4" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/bahukawasaki.stream" type='application/x-mpegURL'>
+				</video>
+                <label class="form-control label-warning text-center">Bahu Kawasaki</label>
+            </div>
+        </div>
+        <div class="row pb-row">
+            <div class="col-md-3 pb-video">
+				<video id="cctv6" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/calaca1.stream" type='application/x-mpegURL'>
+				</video>
+                <label class="form-control label-warning text-center">Calaca 1</label>
+            </div>
+			
+            <div class="col-md-3 pb-video">
+				<video id="cctv7" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/calaca2.stream" type='application/x-mpegURL'>
+				</video>
+                <label class="form-control label-warning text-center">Calaca 2</label>
+            </div>
+			
+            <div class="col-md-3 pb-video">
+				<video id="cctv5" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/bnibole.stream" type='application/x-mpegURL'>
+				</video>
+                <label class="form-control label-warning text-center">BNI Boulevard</label>
+            </div>
+			
+            <div class="col-md-3 pb-video">
+				<video id="cctv8" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/depanbankmega.stream" type='application/x-mpegURL'>
+				</video>
+                <label class="form-control label-warning text-center">Depan Bank Mega</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .pb-video-container {
+        padding-top: 20px;
+        background: #bdc3c7;
+        font-family: Lato;
+    }
+
+    .pb-video {
+        border: 1px solid #e6e6e6;
+        padding: 5px;
+    }
+
+        .pb-video:hover {
+            background: #2c3e50;
+        }
+
+    .pb-video-frame {
+        transition: width 2s, height 2s;
+    }
+
+        .pb-video-frame:hover {
+            height: 300px;
+        }
+
+    .pb-row {
+        margin-bottom: 10px;
+    }
+</style>
+
+<!-- Video Gallery - END -->
+
+</div>
+
+</body>
+</html>

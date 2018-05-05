@@ -32,4 +32,9 @@ class HomeController extends Controller
 	{
 		return View('penduduk.lingkungan.index');
 	}
+	
+	public function cctvHome()
+	{
+		return View('cctv.cctv-home');
+	}
 }

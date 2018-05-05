@@ -17,3 +17,6 @@ route::get('/map/{no}', 'HomeController@map');
 route::get('/bencana/banjir', 'HomeController@banjir');
 route::get('/bencana/longsor', 'HomeController@longsor');
 route::get('/penduduk/lingkungan', 'HomeController@lingkungan');
+
+
+route::get('/cctv/home', 'HomeController@cctvHome');
