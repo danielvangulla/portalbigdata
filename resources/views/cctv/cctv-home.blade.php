@@ -38,8 +38,8 @@
             </div>
 			
             <div class="col-md-3 pb-video">
-				<video id="cctv2" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
-					<source src="rtmp://36.67.90.92:1935/live/adipura2.stream" type='application/x-mpegURL'>
+				<video id="cctv2" class="video-js" controls preload="auto" poster="http://vjs.zencdn.net/v/oceans.png" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/teling1.stream" type='rtmp/mp4'>
 				</video>
                 <label class="form-control label-warning text-center">Adipura 2</label>
             </div>
