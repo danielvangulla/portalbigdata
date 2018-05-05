@@ -31,8 +31,8 @@
         <h3 class="text-center">CCTV Kota Manado</h3>
         <div class="row pb-row">
             <div class="col-md-3 pb-video">
-				<video id="cctv1" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
-					<source src="rtmp://36.67.90.92:1935/live/adipura1.stream" type='application/x-mpegURL'>
+				<video id="cctv1" class="video-js vjs-default-skin pb-video-frame" poster="http://vjs.zencdn.net/v/oceans.png" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/adipura1.stream" type='rtmp/mp4'>
 				</video>
                 <label class="form-control label-warning text-center">Adipura 1</label>
             </div>
@@ -41,48 +41,48 @@
 				<video id="cctv2" class="video-js" controls preload="auto" poster="http://vjs.zencdn.net/v/oceans.png" width="100%" height="180" data-setup='{}'>
 					<source src="rtmp://36.67.90.92:1935/live/teling1.stream" type='rtmp/mp4'>
 				</video>
-                <label class="form-control label-warning text-center">Adipura 2</label>
+                <label class="form-control label-warning text-center">Perempatan Teling 1</label>
             </div>
 			
             <div class="col-md-3 pb-video">
-				<video id="cctv3" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
-					<source src="rtmp://36.67.90.92:1935/live/aryaduta.stream" type='application/x-mpegURL'>
+				<video id="cctv3" class="video-js vjs-default-skin pb-video-frame" poster="http://vjs.zencdn.net/v/oceans.png" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/aryaduta.stream" type='rtmp/mp4'>
 				</video>
                 <label class="form-control label-warning text-center">Aryaduta</label>
             </div>
 			
             <div class="col-md-3 pb-video">
-				<video id="cctv4" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
-					<source src="rtmp://36.67.90.92:1935/live/bahukawasaki.stream" type='application/x-mpegURL'>
+				<video id="cctv4" class="video-js vjs-default-skin pb-video-frame" poster="http://vjs.zencdn.net/v/oceans.png" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/bahukawasaki.stream" type='rtmp/mp4'>
 				</video>
                 <label class="form-control label-warning text-center">Bahu Kawasaki</label>
             </div>
         </div>
         <div class="row pb-row">
             <div class="col-md-3 pb-video">
-				<video id="cctv6" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
-					<source src="rtmp://36.67.90.92:1935/live/calaca1.stream" type='application/x-mpegURL'>
+				<video id="cctv6" class="video-js vjs-default-skin pb-video-frame" poster="http://vjs.zencdn.net/v/oceans.png" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/calaca1.stream" type='rtmp/mp4'>
 				</video>
                 <label class="form-control label-warning text-center">Calaca 1</label>
             </div>
 			
             <div class="col-md-3 pb-video">
-				<video id="cctv7" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
-					<source src="rtmp://36.67.90.92:1935/live/calaca2.stream" type='application/x-mpegURL'>
+				<video id="cctv7" class="video-js vjs-default-skin pb-video-frame" poster="http://vjs.zencdn.net/v/oceans.png" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/calaca2.stream" type='rtmp/mp4'>
 				</video>
                 <label class="form-control label-warning text-center">Calaca 2</label>
             </div>
 			
             <div class="col-md-3 pb-video">
-				<video id="cctv5" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
-					<source src="rtmp://36.67.90.92:1935/live/bnibole.stream" type='application/x-mpegURL'>
+				<video id="cctv5" class="video-js vjs-default-skin pb-video-frame" poster="http://vjs.zencdn.net/v/oceans.png" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/teling2.stream" type='rtmp/mp4'>
 				</video>
-                <label class="form-control label-warning text-center">BNI Boulevard</label>
+                <label class="form-control label-warning text-center">Perempatan Teling-2</label>
             </div>
 			
             <div class="col-md-3 pb-video">
-				<video id="cctv8" class="video-js vjs-default-skin pb-video-frame" controls preload="auto" width="100%" height="180" data-setup='{}'>
-					<source src="rtmp://36.67.90.92:1935/live/depanbankmega.stream" type='application/x-mpegURL'>
+				<video id="cctv8" class="video-js vjs-default-skin pb-video-frame" poster="http://vjs.zencdn.net/v/oceans.png" controls preload="auto" width="100%" height="180" data-setup='{}'>
+					<source src="rtmp://36.67.90.92:1935/live/depanbankmega.stream" type='rtmp/mp4'>
 				</video>
                 <label class="form-control label-warning text-center">Depan Bank Mega</label>
             </div>
