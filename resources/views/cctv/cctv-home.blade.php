@@ -8,8 +8,12 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('video-gallery/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('video-gallery/font-awesome/css/font-awesome.min.css') }}" />
 
-	<link href="{{ URL::asset('css/video-js.css') }}" rel="stylesheet">
-	<script src="{{ URL::asset('js/video.js') }}"></script>
+	{{--<link href="{{ URL::asset('css/video-js.css') }}" rel="stylesheet">--}}
+	{{--<script src="{{ URL::asset('js/video.js') }}"></script>--}}
+
+    <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+    <!-- If you'd like to support IE8 -->
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 	
     <script type="text/javascript" src="{{ URL::asset('video-gallery/js/jquery-1.10.2.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('video-gallery/bootstrap/js/bootstrap.min.js') }}"></script>
