@@ -8,11 +8,11 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('video-gallery/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('video-gallery/font-awesome/css/font-awesome.min.css') }}" />
 
-	{{--<link href="{{ URL::asset('css/video-js.css') }}" rel="stylesheet">--}}
-	{{--<script src="{{ URL::asset('js/video.js') }}"></script>--}}
+	<link href="{{ URL::asset('css/video-js.css') }}" rel="stylesheet">
+	<script src="{{ URL::asset('js/video.js') }}"></script>
 
-    <link href="//vjs.zencdn.net/6.7/video-js.min.css" rel="stylesheet">
-    <script src="//vjs.zencdn.net/6.7/video.min.js"></script>
+    {{--<link href="//vjs.zencdn.net/6.7/video-js.min.css" rel="stylesheet">--}}
+    {{--<script src="//vjs.zencdn.net/6.7/video.min.js"></script>--}}
 	
     <script type="text/javascript" src="{{ URL::asset('video-gallery/js/jquery-1.10.2.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('video-gallery/bootstrap/js/bootstrap.min.js') }}"></script>
