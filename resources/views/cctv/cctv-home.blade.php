@@ -87,7 +87,7 @@
 				
 				<div class="col-md-1 pb-video">
 					<video class="video-js vjs-default-skin pb-video-frame" poster="http://vjs.zencdn.net/v/oceans.png" controls preload="auto" width="100%" height="100" data-setup='{}'>
-						<source src="rtmp://36.67.90.92:1935/live/calaca1.stream" type='rtmp/mp4'>
+						<source src="rtmp://36.67.90.92:1935/live/calaca2.stream" type='rtmp/mp4'>
 					</video>
 					<label class="form-control label-warning text-center">Calaca 1</label>
 				</div>
