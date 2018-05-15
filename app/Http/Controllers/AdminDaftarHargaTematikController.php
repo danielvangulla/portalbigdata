@@ -30,12 +30,20 @@
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
+<<<<<<< HEAD
 			$this->col[] = ["label"=>"Harga Peta","name"=>"harga"];
+=======
+			$this->col[] = ["label"=>"Harga Peta","name"=>"harga", "callback_php"=>'number_format($row->harga, 0, \',\', \'.\')'];
+>>>>>>> 45c4576dbc7ddc4564f473fa062b6d3c19ea7e87
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
+<<<<<<< HEAD
 			$this->form[] = ['label'=>'Harga Peta','name'=>'harga','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+=======
+			$this->form[] = ['label'=>'Harga Peta','name'=>'harga','type'=>'money','validation'=>'required|integer|min:0','width'=>'col-sm-10','priceformat_parameters' => ['prefix' => 'Rp. ', 'thousandsSeparator' => '.', 'centsSeparator' => ',', 'centsLimit' => 0]];
+>>>>>>> 45c4576dbc7ddc4564f473fa062b6d3c19ea7e87
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
