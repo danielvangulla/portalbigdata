@@ -1,7 +1,12 @@
 <?php namespace App\Http\Controllers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	use Session;
+=======
+	use PHPUnit\Framework\Constraint\IsTrue;
+    use Session;
+>>>>>>> 45c4576dbc7ddc4564f473fa062b6d3c19ea7e87
 =======
 	use PHPUnit\Framework\Constraint\IsTrue;
     use Session;
@@ -38,17 +43,23 @@
 			$this->col[] = ["label"=>"Nomor Grid Peta","name"=>"nomor_grid_peta"];
 			$this->col[] = ["label"=>"Nama Peta","name"=>"nama_peta"];
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$this->col[] = ["label"=>"Kategori Tematik","name"=>"kategoritematiks_id","join"=>"kategoritematiks,id"];
 			$this->col[] = ["label"=>"Jenis Tematik","name"=>"jenistematiks_id","join"=>"jenistematiks,id"];
 			$this->col[] = ["label"=>"Harga Peta","name"=>"tematikhargas_id","join"=>"tematikhargas,id"];
 			$this->col[] = ["label"=>"Peta Low Resolution","name"=>"lores"];
 			$this->col[] = ["label"=>"Peta High Resolution","name"=>"hires"];
 =======
+=======
+>>>>>>> 45c4576dbc7ddc4564f473fa062b6d3c19ea7e87
 			$this->col[] = ["label"=>"Kategori Tematik","name"=>"kategoritematiks_id","join"=>"kategoritematiks,kategori"];
 			$this->col[] = ["label"=>"Jenis Tematik","name"=>"jenistematiks_id","join"=>"jenistematiks,jenis"];
 			$this->col[] = ["label"=>"Harga Peta","name"=>"tematikhargas_id","join"=>"tematikhargas,harga"];
 			$this->col[] = ["label"=>"Peta Low Resolution","name"=>"lores", "image"=> True];
 			$this->col[] = ["label"=>"Peta High Resolution","name"=>"hires", "download"=> True];
+<<<<<<< HEAD
+>>>>>>> 45c4576dbc7ddc4564f473fa062b6d3c19ea7e87
+=======
 >>>>>>> 45c4576dbc7ddc4564f473fa062b6d3c19ea7e87
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
@@ -57,17 +68,23 @@
 			$this->form[] = ['label'=>'Nomor Grid Peta','name'=>'nomor_grid_peta','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Nama Peta','name'=>'nama_peta','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$this->form[] = ['label'=>'Kategori Peta Tematik','name'=>'kategoritematiks_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'kategoritematiks,id'];
 			$this->form[] = ['label'=>'Jenis Peta Tematik','name'=>'jenistematiks_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'jenistematiks,id'];
 			$this->form[] = ['label'=>'Harga Peta','name'=>'tematikhargas_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'tematikhargas,id'];
 			$this->form[] = ['label'=>'Peta Resolusi Rendah','name'=>'lores','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Peta Resolusi Tinggi','name'=>'hires','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 =======
+=======
+>>>>>>> 45c4576dbc7ddc4564f473fa062b6d3c19ea7e87
 			$this->form[] = ['label'=>'Kategori Peta Tematik','name'=>'kategoritematiks_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'kategoritematiks,kategori'];
 			$this->form[] = ['label'=>'Jenis Peta Tematik','name'=>'jenistematiks_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'jenistematiks,jenis'];
 			$this->form[] = ['label'=>'Harga Peta','name'=>'tematikhargas_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'tematikhargas,harga'];
 			$this->form[] = ['label'=>'Peta Resolusi Rendah','name'=>'lores','type'=>'upload','validation'=>'required|image'];
 			$this->form[] = ['label'=>'Peta Resolusi Tinggi','name'=>'hires','type'=>'upload','validation'=>'required','width'=>'col-sm-10'];
+<<<<<<< HEAD
+>>>>>>> 45c4576dbc7ddc4564f473fa062b6d3c19ea7e87
+=======
 >>>>>>> 45c4576dbc7ddc4564f473fa062b6d3c19ea7e87
 			$this->form[] = ['label'=>'Tingkat','name'=>'tingkat','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Skala','name'=>'skala','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
