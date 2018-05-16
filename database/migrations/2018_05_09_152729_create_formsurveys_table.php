@@ -31,6 +31,8 @@ class CreateFormsurveysTable extends Migration
             $table->string('lama_pendidikan');
             $table->string('pendidikan_berjalan');
             $table->string('imb');
+            $table->string('slf');
+            $table->string('skbg');
             $table->string('nomor_siup');
             $table->string('nomor_situ');
             $table->string('nomor_tdp');
