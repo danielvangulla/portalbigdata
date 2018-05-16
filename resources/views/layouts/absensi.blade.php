@@ -1,18 +1,18 @@
 <!doctype html>	
 <html>
     <head>
-        @include('includes.head')
+        @include('includes.absensi-head')
     </head>
     <body>
         <div id="wrapper">
 
-            @include('includes.sidebar')
+            @include('includes.absensi-sidebar')
 
             <div id="content">
                 @yield('content')
             </div>			
 
         </div>
-        @include('includes.footer')
+        @include('includes.absensi-foot')
     </body>
 </html>
