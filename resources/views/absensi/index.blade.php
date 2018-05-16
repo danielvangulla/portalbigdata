@@ -22,11 +22,9 @@
 <div style="margin-left:50px;">
 	<p style="font-size:26px;">
 		<span style="color:grey;">Welcome..</span> <br>
-			<strong>lobuApps</strong> - 
+			<strong>Big Data</strong> - 
 			<strong><span style="color:green;">Smart</span></strong>
-			and 
-			<strong><span style="color:blue;">Simply</span></strong>
-			for Good Bussiness !
+			<strong><span style="color:blue;">Absensi !</span></strong>
 		<br>
 	</p>
 </div>

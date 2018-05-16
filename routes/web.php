@@ -21,4 +21,15 @@ route::get('/penduduk/lingkungan', 'HomeController@lingkungan');
 
 route::get('/cctv/home', 'HomeController@cctvHome');
 
-route::get('/absensi', 'HomeController@absensi');
+
+Auth::routes();
+Route::prefix('absensi')->group(function () {
+	
+	route::get('/', 'AbsensiController@index');
+	
+	route::get('/pengaturan-jabatan', 'AbsensiPengaturanController@pengaturanJabatan');
+	route::get('/pengaturan-departemen', 'AbsensiPengaturanController@pengaturanDepartemen');
+	
+	route::resource('/karyawan', 'AbsensiKaryawanController');
+
+});
