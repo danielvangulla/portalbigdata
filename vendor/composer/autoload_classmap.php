@@ -18,6 +18,7 @@ return array(
     'App\\Http\\Controllers\\AbsensiController' => $baseDir . '/app/Http/Controllers/AbsensiController.php',
     'App\\Http\\Controllers\\AbsensiKaryawanController' => $baseDir . '/app/Http/Controllers/AbsensiKaryawanController.php',
     'App\\Http\\Controllers\\AbsensiPengaturanController' => $baseDir . '/app/Http/Controllers/AbsensiPengaturanController.php',
+    'App\\Http\\Controllers\\AbsensiProsesController' => $baseDir . '/app/Http/Controllers/AbsensiProsesController.php',
     'App\\Http\\Controllers\\AdminCmsUsersController' => $baseDir . '/app/Http/Controllers/AdminCmsUsersController.php',
     'App\\Http\\Controllers\\AdminDaftarHargaTematikController' => $baseDir . '/app/Http/Controllers/AdminDaftarHargaTematikController.php',
     'App\\Http\\Controllers\\AdminFormSurveyController' => $baseDir . '/app/Http/Controllers/AdminFormSurveyController.php',

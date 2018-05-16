@@ -29,7 +29,10 @@ Route::prefix('absensi')->group(function () {
 	
 	route::get('/pengaturan-jabatan', 'AbsensiPengaturanController@pengaturanJabatan');
 	route::get('/pengaturan-departemen', 'AbsensiPengaturanController@pengaturanDepartemen');
+	route::post('/setupPeriode', 'AbsensiPengaturanController@setupPeriode');
 	
 	route::resource('/karyawan', 'AbsensiKaryawanController');
+	
+	route::get('/upload-absensi', 'AbsensiProsesController@uploadAbsensi');
 
 });

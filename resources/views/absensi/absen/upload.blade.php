@@ -1,6 +1,6 @@
-@extends('layouts.schedule')
+@extends('layouts.absensi')
 @section('content')
-<?php $xurl = Setup::url(); ?>
+<?php $xurl = \App\AbsensiSetup::url(); ?>
 <div class="menubar">
     <div class="sidebar-toggler visible-xs">
         <i class="ion-navicon"></i>
@@ -55,7 +55,7 @@
 					<div class="row">
 						<div class="col col-md-12 text-center" id="statusProgres" style="display: none;">
 							<br/>
-							<span class="text-danger"><img src="{{ URL::asset('images/select2-spinner.gif') }}" /> mohon tunggu, sedang proses........</span>
+							<span class="text-danger"><img src="{{ $xurl.'images/select2-spinner.gif' }}" /> mohon tunggu, sedang proses........</span>
 						</div>
 						<div class="col col-md-12 text-center" id="statusProgresBerhasil" style="display: none;">
 							<br/>
@@ -78,7 +78,7 @@
 						</div>
 					</h4>
 					<h5>
-						<form action="{{$xurl}}prosesAbsenFile" method="post" enctype="multipart/form-data">
+						<form action="{{ $xurl.prosesAbsenFile }}" method="post" enctype="multipart/form-data">
 							Pilih File untuk diupload:
 							<input type="file" name="fileToUpload" id="fileToUpload"><br>
 							<input class="hidden" name="outlet" id="xoutlet">
@@ -97,7 +97,7 @@
 					<div class="row">
 						<div class="col col-md-12 text-center" id="statusProgres2" style="display: none;">
 							<br/>
-							<span class="text-danger"><img src="{{ URL::asset('images/select2-spinner.gif') }}" /> mohon tunggu, sedang proses........</span>                    
+							<span class="text-danger"><img src="{{ $xurl.'images/select2-spinner.gif' }}" /> mohon tunggu, sedang proses........</span>                    
 						</div>   
 						<div class="col col-md-12 text-center" id="statusProgresBerhasil2" style="display: none;">
 							<br/>
@@ -313,7 +313,9 @@
 			success: function(info) {
 				if (info==='ok') {
 					location.reload();
-				}					
+				} else {
+					conlose.log(info);
+				}
 			}
 		});
 	}

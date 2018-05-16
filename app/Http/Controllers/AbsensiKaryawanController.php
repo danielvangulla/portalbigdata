@@ -6,6 +6,7 @@ use Validator;
 use Input;
 use Redirect;
 use Session;
+use Auth;
 use Illuminate\Http\Request;
 
 class AbsensiKaryawanController extends Controller
