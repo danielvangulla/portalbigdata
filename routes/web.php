@@ -20,3 +20,5 @@ route::get('/penduduk/lingkungan', 'HomeController@lingkungan');
 
 
 route::get('/cctv/home', 'HomeController@cctvHome');
+
+route::get('/absensi', 'HomeController@absensi');

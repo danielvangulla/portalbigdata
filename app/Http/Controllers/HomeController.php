@@ -37,4 +37,9 @@ class HomeController extends Controller
 	{
 		return View('cctv.cctv-home');
 	}
+	
+	public function absensi()
+	{
+		return View('absensi.index');
+	}
 }
