@@ -20,13 +20,12 @@
 </div>
 
 <div style="margin-left:50px;">
-	<p style="font-size:26px;">
-		<span style="color:grey;">Welcome..</span> <br>
+	<h1>
 			<strong>Big Data</strong> - 
 			<strong><span style="color:green;">Smart</span></strong>
 			<strong><span style="color:blue;">Absensi !</span></strong>
-		<br>
-	</p>
+	</h1>
+	<img src="{{ asset('/munter/images/logo_v3_landscape.png') }}" height="80%" width="80%"/>
 </div>
 
 @if (Session::has('messagexxx'))

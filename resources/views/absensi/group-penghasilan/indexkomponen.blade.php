@@ -1,6 +1,6 @@
-@extends('layouts.none')
+@extends('layouts.absensi')
 @section('content')
-<?php $xurl = Setup::url(); ?>
+<?php $xurl = \App\AbsensiSetup::url(); ?>
 <div class="menubar">
     <div class="sidebar-toggler visible-xs">
         <i class="ion-navicon"></i>
@@ -9,7 +9,7 @@
     <div class="page-title">
         <b>Komponen Gaji</b>
     </div>
-    <a href="{{$xurl}}komponen-penghasilan/create" class="btn btn-success pull-right">
+    <a href="{{ $xurl.'komponen-penghasilan/create' }}" class="btn btn-success pull-right">
         <span>Tambah Data</span>
     </a>   
 </div>
@@ -27,6 +27,7 @@
 			</tr>
 		</thead>
 		<tbody>
+		@if (count($komponen) > 0)
 			@foreach($komponen as $key => $value)
 			<tr>
 				<?php
@@ -53,14 +54,15 @@
 					 <a style="text-align:right; margin-right:5px;" class="btn btn-xs btn-info pull-right" href="{{ $xurl.'komponen-penghasilan/'. $value->id .'/edit' }}">Edit Data</a>
 				</td>                       
 			</tr>
-			@endforeach                
+			@endforeach
+		@endif
 		</tbody>
 	</table>
 </div>
 
 <script type="text/javascript">
     $(function () {
-        $("html, body").css('height', '100%');                
+        $("html, body").css('height', '100%');
     });
     
 	$(function() {

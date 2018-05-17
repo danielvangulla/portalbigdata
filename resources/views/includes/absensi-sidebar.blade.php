@@ -6,7 +6,7 @@
 		</form-->
 	
         <a href="index.html" class="name">
-            <!--img class="avatar" src="#"/-->
+            <img class="avatar" src="{{ asset('/munter/images/icon/iconBigData_glow.png') }}"/>
 			
             <span>
 			@if (Auth::user()->level==10)
@@ -127,8 +127,7 @@
                 </a>
             </li>
             <li>
-                <a href="/absensi/RedDate">
-                <a href="#">
+                <a href="/absensi/libur">
                     <i class="ion-calendar"></i>
                     <span>Input Tanggal Merah</span>
                 </a>
@@ -207,9 +206,9 @@
                     <i class="fa fa-chevron-down"></i>
                 </a>
                 <ul class="submenu">
-                    <li><a href="/absensi/Laporan-Absen-isi-tanggal">Absensi</a></li>
+                    <li><a href="/absensi/laporan-kehadiran-filter">Absensi</a></li>
 					
-						<li><a href="/absensi/Laporan-Gaji-Tanggal">Daftar Gaji</a></li>
+						<li><a href="/absensi/laporan-gaji-filter">Daftar Gaji</a></li>
 						<!--li><a href="/absensi/Laporan-SlipGaji">Slip Gaji</a></li-->
                 </ul>
             </li>

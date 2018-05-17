@@ -20,7 +20,8 @@ class AbsensiKaryawanController extends Controller
     {
 		$karyawan = \App\AbsensiKaryawan::all();
 		$outlet = [1=>"Big Data"];
-        return View('absensi.karyawan.index', compact('karyawan','outlet'));
+        return View('absensi.karyawan.index', 
+		compact('karyawan','outlet'));
     }
 
     public function create()
@@ -30,7 +31,8 @@ class AbsensiKaryawanController extends Controller
 		$jabatan = \App\AbsensiJabatan::pluck('keterangan','id');
 		$groupgaji = \App\AbsensiGroupgaji::pluck('keterangan','id');
 		$outlet	= \App\AbsensiKaryawan::outlet();
-        return View('absensi.karyawan.create', compact('jabatan','outlet','departemen','departemensub','groupgaji'));
+        return View('absensi.karyawan.create', 
+		compact('jabatan','outlet','departemen','departemensub','groupgaji'));
     }
 
     public function store(Request $request)
@@ -53,25 +55,25 @@ class AbsensiKaryawanController extends Controller
 					->withErrors($validator)
 					->withInput(Input::except('password'));
 		} else {
-			$karyawan = new \App\AbsensiKaryawan;
-			$karyawan -> idmesin 			= Input::get('idmesin');
-			$karyawan -> outlet 			= Input::get('outlet');
-			$karyawan -> nama 				= Input::get('nama');
-			$karyawan -> lahir 				= Input::get('lahir');
-			$karyawan -> tgllahir 			= Input::get('tgllahir');
-			$karyawan -> alamat 			= Input::get('alamat');
-			$karyawan -> tlp 				= Input::get('tlp');
-			$karyawan -> email 				= Input::get('email');
-			$karyawan -> ktp 				= Input::get('ktp');
-			$karyawan -> agama 				= Input::get('agama');
-			$karyawan -> kelamin 			= Input::get('kelamin');
-			$karyawan -> stat_kawin 		= Input::get('stat_kawin');
-			$karyawan -> tglmasuk 			= Input::get('tglmasuk');
-			$karyawan -> departemen_id 		= Input::get('departemen_id');
-			$karyawan -> departemensub_id	= Input::get('departemensub_id');
-			$karyawan -> jabatan_id 		= Input::get('jabatan_id');
-			$karyawan -> groupgaji_id 		= Input::get('groupgaji_id');
-			$karyawan -> save();
+			$x = new \App\AbsensiKaryawan;
+			$x->idmesin 			= $request->idmesin;
+			$x->outlet 				= $request->outlet;
+			$x->nama 				= $request->nama;
+			$x->lahir 				= $request->lahir;
+			$x->tgllahir 			= $request->tgllahir;
+			$x->alamat 				= $request->alamat;
+			$x->tlp 				= $request->tlp;
+			$x->email 				= $request->email;
+			$x->ktp 				= $request->ktp;
+			$x->agama 				= $request->agama;
+			$x->kelamin 			= $request->kelamin;
+			$x->stat_kawin 			= $request->stat_kawin;
+			$x->tglmasuk 			= $request->tglmasuk;
+			$x->departemen_id 		= $request->departemen_id;
+			$x->departemensub_id	= $request->departemensub_id;
+			$x->jabatan_id 			= $request->jabatan_id;
+			$x->groupgaji_id 		= $request->groupgaji_id;
+			$x->save();
 			
 			Session::flash('message','Data berhasil disimpan..');
 			return Redirect::to('/absensi/karyawan');

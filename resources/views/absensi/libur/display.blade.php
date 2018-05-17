@@ -1,6 +1,6 @@
-@extends('layouts.none')
+@extends('layouts.absensi')
 @section('content')
-<?php $xurl = Setup::url(); ?>
+<?php $xurl = \App\AbsensiSetup::url(); ?>
 <div class="menubar">
     <div class="sidebar-toggler visible-xs">
         <i class="ion-navicon"></i>
@@ -104,11 +104,12 @@
 		
 		$(this).attr('disabled','');
 		$.ajax({
-			url:xurl+'RedDate-save',
+			headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+			url:xurl+'libur-save',
 			type:'POST',
 			data: {'data':red},
 			success: function(info) {
-				if (info==="ok")
+				if (info == "ok")
 				{
 					location.reload();
 				}
@@ -121,10 +122,11 @@
 		var app = confirm("Yakin ingin dihapus ?");
 		if (app){
 			$.ajax({
-				url:xurl+'RedDate-hapus/'+id,
+				headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+				url:xurl+'libur-hapus/'+id,
 				type:'GET',
 				success: function(info) {
-					if (info==="ok")
+					if (info == "ok")
 					{
 						location.reload();
 					}

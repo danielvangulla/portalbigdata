@@ -2,6 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />	
 <title>Absensi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- stylesheets -->
 <link rel="stylesheet" type="text/css" href="{{ asset('css/absensi/compiled/theme.css') }}" />

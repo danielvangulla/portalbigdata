@@ -29,23 +29,23 @@ class AbsensiPengaturanController extends Controller
 		return View('absensi.pengaturan.departemen', compact('departemen', 'departemensub'));
 	}
 	
-	public function setupIP()
+	public function setupIP(Request $request)
 	{
-		if(Request::ajax()){
+		if($request->ajax()){
 			try {
-                $input = Input::all();
+                $req = $request->data[0];
                 
-                $j = json_encode($input);
-                $x = json_decode($j);
+                $ip		= $req['ip'];
+                $key	= $req['key'];
                 
-				// print_r($j);
-                $ip		= $x->data[0]->ip;
-                $key	= $x->data[0]->key;
-                
-				$setup	= Setup::find(1);
-				if ($ip!=""){ $setup->ipmesin = $ip; }
-				if ($key!=""){ $setup->key = $key; }
-				$setup->save();               
+				$x	= \App\AbsensiSetup::find(1);
+				if ($ip!=""){ 
+					$x->ipmesin = $ip; 
+				}
+				if ($key!=""){ 
+					$x->key = $key; 
+				}
+				$x->save();               
                
 				return "ok";
             } catch (Exception $ex) {
@@ -54,23 +54,19 @@ class AbsensiPengaturanController extends Controller
         }
 	}
 	
-	public function setupPeriode()
+	public function setupPeriode(Request $request)
 	{
-		if(Request::ajax()){
+		if($request->ajax()){
 			try {
-                // $input = Input::all();
+                $req = $request->data[0];
+				
+                $tgl1	= $req['tgl1'];
+                $tgl2	= $req['tgl2'];
                 
-                // $j = json_encode($input);
-                // $x = json_decode($j);
-                
-				// print_r($j);
-                // $tgl1	= $x->data[0]->tgl1;
-                // $tgl2	= $x->data[0]->tgl2;
-                
-				// $setup	= Setup::find(1);
-				// $setup->absenperiod1	= $tgl1;
-				// $setup->absenperiod2	= $tgl2;
-				// $setup->save();               
+				$x	= \App\AbsensiSetup::find(1);
+				$x->absenperiod1	= $tgl1;
+				$x->absenperiod2	= $tgl2;
+				$x->save();               
                
 				return "ok";
             } catch (Exception $ex) {

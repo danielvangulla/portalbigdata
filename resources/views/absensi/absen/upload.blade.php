@@ -6,11 +6,8 @@
         <i class="ion-navicon"></i>
     </div>
     <div class="page-title">
-	@if (Auth::user()->outlet >= 1)
-		<span style="float:left">Upload dari Outlet : </span>{{ Form::select('outlet',array(0=>'Outlet Tidak Ditemukan',1=>'Big Data',2=>'Lainnya'),$outlet,array('class'=>'form-control','style'=>'width:300px; margin-top:-3px;','id'=>'nomorOutlet','disabled'=>'')) }}
-	@else
-		<span style="float:left">Upload dari Outlet : </span>{{ Form::select('outlet',array(0=>' ',1=>'Big Data',2=>'Lainnya'),$outlet,array('class'=>'form-control','style'=>'width:300px; margin-top:-3px;','id'=>'nomorOutlet')) }}
-	@endif
+		<span style="float:left">Upload dari : </span>
+		{{ Form::select('outlet',array(1=>'Big Data'),$outlet,array('class'=>'form-control','style'=>'width:300px; margin-top:-3px;','id'=>'nomorOutlet')) }}
     </div>	
 </div>
 @if (Session::has('message'))
@@ -21,13 +18,13 @@
 @endif
 <div class="tabs">
 	<ul class="nav nav-tabs" role="tablist">
-		<li class="active"><a href="#tab1" role="tab" data-toggle="tab">Via Web Service</a></li>
-		<li><a href="#tab2" role="tab" data-toggle="tab">Via Text File</a></li>
+		<li class="active"><a href="#tab2" role="tab" data-toggle="tab">Via Text File</a></li>
+		<li ><a href="#tab1" role="tab" data-toggle="tab">Via Web Service</a></li>
 	</ul>
 </div>
 <div class="content-wrapper">
 	<div id="myTabContent" class="tab-content">
-		<div class="tab-pane fade in active" id="tab1"><br/>
+		<div class="tab-pane fade in" id="tab1"><br/>
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4>Upload Data Absensi</h4>
@@ -65,7 +62,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="tab-pane fade in" id="tab2"><br/>
+		<div class="tab-pane fade in active" id="tab2"><br/>
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4>Upload Data Absensi</h4>            
@@ -78,8 +75,9 @@
 						</div>
 					</h4>
 					<h5>
-						<form action="{{ $xurl.prosesAbsenFile }}" method="post" enctype="multipart/form-data">
-							Pilih File untuk diupload:
+						<form action="{{ url($xurl.'upload-absensi-file') }}" method="post" enctype="multipart/form-data">
+						@csrf
+							Pilih File (.txt) untuk diupload:
 							<input type="file" name="fileToUpload" id="fileToUpload"><br>
 							<input class="hidden" name="outlet" id="xoutlet">
 					</h5>
@@ -273,15 +271,11 @@
     }
 	
 	$('#uploadFilex').click(function(){
-		if (($('#nomorOutlet').val())>=1){
-			$('#xoutlet').val($('#nomorOutlet').val());
-			$(this).hide();
-			$('#uploadFile').click();
-			$('#tombolUpload').hide();
-			$("#statusProgres2").show();
-		} else {
-			alert ("Silahkan Pilih Outlet.."); return;
-		}
+		$('#xoutlet').val($('#nomorOutlet').val());
+		$(this).hide();
+		$('#uploadFile').click();
+		$('#tombolUpload').hide();
+		$("#statusProgres2").show();
 	});
 
 	function gantiIP()
@@ -290,13 +284,13 @@
 		var key = $('#key').val();		
 		jsonArr = [{'ip':ip,'key':key}];		
 		$.ajax({
+			headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
 			url:xurl+'setupIP',
 			type:'POST',
 			data:{'data':jsonArr},
-			success: function(info) {
-				if (info==='ok') {
-					location.reload();
-				}					
+			dataType : 'json',
+			complete: function(info) {
+				location.reload();
 			}
 		});
 	}
@@ -307,15 +301,13 @@
 		var tgl2 = $('#tgl2').val();		
 		jsonArr = [{'tgl1':tgl1, 'tgl2':tgl2}];
 		$.ajax({
-			url:xurl+'setupPeriode',
+			headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+			url : xurl+'setupPeriode',
 			type:'POST',
 			data:{'data':jsonArr},
-			success: function(info) {
-				if (info==='ok') {
-					location.reload();
-				} else {
-					conlose.log(info);
-				}
+			dataType : 'json',
+			complete: function(info) {
+				location.reload();
 			}
 		});
 	}

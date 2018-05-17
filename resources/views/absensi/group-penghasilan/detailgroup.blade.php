@@ -1,4 +1,4 @@
-@extends('layouts.none')
+@extends('layouts.absensi')
 @section('content')
 
 <div class="menubar">
@@ -30,12 +30,12 @@
 		<tbody>
 			@foreach($groupd as $key => $value)
 			<tr>
-				<td align="center">{{ $value->id }}</td>
+				<td align="center">{{ $value->komponengaji_id }}</td>
 				<td align="center">{{ $value->komponengaji->kode }}</td>
 				<td align="left">{{ $value->komponengaji->keterangan }}</td>
 				<td align="center">{{ $value->formula }}</td>
 				<td align="center">
-					{{ Form::open(array('url' => 'group-penghasilan/' . $value->id, 'class' => '')) }}
+					{{ Form::open(array('url' => '/absensi/group-penghasilan/' . $value->id, 'class' => '')) }}
 						{{Form::hidden('_method', 'DELETE') }}
 						{{Form::submit('Hapus', array('class' => 'btn btn-xs btn-danger','style'=>'margin-right:0px;')) }}
 					{{Form::close() }}
@@ -46,9 +46,13 @@
 	</table>
 </div>
 <br><br>
-<div class="form-horizontal" style="border:1px solid grey; text-align:center">
+<div class="form-horizontal" style="border:1px solid grey; text-align:left">
 	<h4>Daftar Kode Formula yang dapat digunakan :</h4>
-	<h4>$TELAT1 - $TELATX - $TELATM1 - $ALPA - $LEMBUR - $LEMBURK - $PPA</h4>
+	<h4><b>$PS</b> :Potongan Sakit (hari) </h4>
+	<h4><b>$PI</b> :Potongan Izin (hari) </h4>
+	<h4><b>$PA</b> :Potongan Alpa (hari) </h4>
+	<h4><b>$PT</b> :Potongan Telat (hari) </h4>
+	<h4><b>$PPA</b> :Pot. Pulang Awal (hari) </h4>
 </div>
 <!-- Form Modal -->
 <div class="modal fade" id="form-tambah" tabindex="-1" role="dialog">
@@ -62,7 +66,7 @@
                     </h4>
                 </div>
                 <div class="modal-body">
-					{{ Form::open(array('url' => 'group-detail/store','class'=>'form-horizontal','role'=>'form')) }}
+					{{ Form::open(array('url' => '/absensi/group-detail/store','class'=>'form-horizontal','role'=>'form')) }}
 						<div class="form-group">
 							<label class="col-sm-2 col-md-2 control-label">Komponen</label>
 							<div class="col-sm-5 col-md-6">

@@ -1,4 +1,4 @@
-@extends('layouts.schedule')
+@extends('layouts.absensi')
 @section('content')
 
 <div class="menubar">
@@ -6,7 +6,7 @@
         <i class="ion-navicon"></i>
     </div>
     <div class="page-title">
-        BitPayroll
+        
     </div>    
 </div>
 

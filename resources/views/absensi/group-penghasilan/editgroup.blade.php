@@ -1,4 +1,4 @@
-@extends('layouts.none')
+@extends('layouts.absensi')
 @section('content')
 
 <div class="menubar">
