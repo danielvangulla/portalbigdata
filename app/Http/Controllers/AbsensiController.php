@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Validator;
+use Input;
+use Redirect;
+use Session;
+use Auth;
 use Illuminate\Http\Request;
 
 class AbsensiController extends Controller

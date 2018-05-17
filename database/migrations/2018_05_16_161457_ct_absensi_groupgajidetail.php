@@ -17,8 +17,7 @@ class CtAbsensiGroupgajidetail extends Migration
             $table->increments('id');
 				$table->integer('groupgaji_id');
 				$table->integer('komponengaji_id');
-				$table->string('formula');
-				$table->integer('urutan');
+				$table->string('formula', 100);
             $table->timestamps();
         });
     }

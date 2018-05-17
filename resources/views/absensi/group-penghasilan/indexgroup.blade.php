@@ -1,6 +1,7 @@
-@extends('layouts.none')
+@extends('layouts.absensi')
 @section('content')
-<?php $xurl = Setup::url(); ?>
+<?php $xurl = \App\AbsensiSetup::url(); ?>
+
 <div class="menubar">
     <div class="sidebar-toggler visible-xs">
         <i class="ion-navicon"></i>
