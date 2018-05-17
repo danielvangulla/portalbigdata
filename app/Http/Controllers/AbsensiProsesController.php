@@ -146,7 +146,11 @@ class AbsensiProsesController extends Controller
 							$logabsen->pulang = $r->jamabsen;
 						}
 					}
+
+					$diff	= date_diff($logabsen->pulang, $logabsen->masuk);
+					$durasi	= $diff->format("%R%H hours");
 					
+					$logabsen->durasi = $durasi;
 					$logabsen->save();
 				}
 			}
@@ -163,7 +167,7 @@ class AbsensiProsesController extends Controller
 		$start = $setup->absenperiod1;
 		$end = $setup->absenperiod2;
 		//$hs=(($JAM_TELAT>=1 and $JAM_TELAT<=15) ? 9000 : ($JAM_TELAT>=16 and $JAM_TELAT<=30) ? 18000 : ($JAM_TELAT>=31 and $JAM_TELAT<=60) ? 36000 : 72000);          
-		$karyawan = Karyawan::ambil();
+		$karyawan = \App\AbsensiKaryawan::all();
 		
 		foreach ($karyawan as $v=>$k)
 		{
@@ -174,12 +178,12 @@ class AbsensiProsesController extends Controller
 			{
 				$tgl = $oDate->format('Y-m-d');
 				$tgloff = $tgl." 01:00:00";
-				$jadwalmasuk = "0000-00-00 00:00:00";
-				$jadwalpulang = "0000-00-00 00:00:00";
-				$absenmasuk = "0000-00-00 00:00:00";
-				$absenoutistirahat = "0000-00-00 00:00:00";
-				$abseninistirahat = "0000-00-00 00:00:00";
-				$absenpulang = "0000-00-00 00:00:00";
+				$jadwalmasuk = $tgl." 07:45:00";
+				$jadwalpulang = $tgl." 17:00:00";
+				$absenmasuk = "";
+				$absenoutistirahat = "";
+				$abseninistirahat = "";
+				$absenpulang = "";
 				$cek = 0;
 				$masukawal = 0;
 				$terlambat = 0;
