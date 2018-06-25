@@ -9,16 +9,16 @@ class AbsensiLaporanController extends Controller
     
 	public function laporanKehadiranFilter()
 	{
-		$outlet = Karyawan::outlet();
-		return View::make('laporan.tanggalAbsen')
-					->with('outlet', $outlet);
+		$outlet = \App\AbsensiKaryawan::outlet();
+		return View('laporan.tanggalAbsen',
+		compact("outlet"));
 	}
 	
 	public function laporanKehadiranHasil($from,$to,$out)
 	{
 		ini_set('max_execution_time', 0);
 		
-		$karyawan = Karyawan::where('outlet','=',$out)
+		$karyawan = \App\AbsensiKaryawan::where('outlet','=',$out)
 							->orderBy('jabatan_id')->orderBy('nama')->get();
 							
 		$timetgl1 = strtotime($from);
@@ -26,19 +26,19 @@ class AbsensiLaporanController extends Controller
 		$periode = $from." s.d ".$to;
 
 		$timeDiff = abs($timetgl2 - $timetgl1);
-		$hari = $timeDiff/86400;  // 86400 seconds in one day	
+		$totalhari = $timeDiff/86400;  // 86400 seconds in one day	
 		$absensi = [];
 		
 		foreach ($karyawan as $k=>$v)
 		{
 			if ($v->outlet == $out){
 				$karyawan_id = $v->id;
-				$outlet = Karyawan::outletCase($v->outlet);
+				$outlet = \App\AbsensiKaryawan::outletCase($v->outlet);
 				$idmesin = $v->idmesin;
 				$tglInfo = date('d-m-Y',  $timetgl1);
 				$tglQuery = date('Y-m-d', $timetgl1);
 				$infoHarian = [];
-				for ($i=0; $i<=$hari; $i++)
+				for ($i=0; $i<=$totalhari; $i++)
 				{
 					$absen = Absen::where('tgl','=',$tglQuery)->where('karyawan_id','=',$karyawan_id,'AND')->first();
 					if ($absen) {
@@ -106,7 +106,8 @@ class AbsensiLaporanController extends Controller
 			}
 		}
 		// return $absensi;
-		return View::make('laporan.laporan-absensi')->with('absensi',$absensi)->with('totalhari',$hari)->with('periode',$periode);		
+		return View('laporan.laporan-absensi',
+		compact ("absensi", "totalhari", "periode"));		
 	}
 	
 }

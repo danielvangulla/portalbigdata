@@ -49,3 +49,10 @@ Route::prefix('absensi')->group(function () {
 	route::get('/laporan-kehadiran-hasil', 'AbsensiLaporanController@laporanKehadiranHasil');
 
 });
+
+
+Route::prefix('api')->group(function () {
+
+	route::get('/pbb/{nop}', 'ApiController@pbb');
+	
+});

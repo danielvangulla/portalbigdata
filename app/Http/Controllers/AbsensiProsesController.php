@@ -40,7 +40,7 @@ class AbsensiProsesController extends Controller
 				if (count($isi)>1){
 					$push = "";
 					try { 
-						$isix = explode(" ", $isi[2]);
+						$isix = explode(" ", $isi[1]);
 						$push = $isi[0]." ".$isix[0]." ".$isix[1];
 					} catch (Exception $e){
 						return $e;
@@ -148,6 +148,7 @@ class AbsensiProsesController extends Controller
 					}
 
 					$diff	= date_diff($logabsen->pulang, $logabsen->masuk);
+					return $diff;
 					$durasi	= $diff->format("%R%H hours");
 					
 					$logabsen->durasi = $durasi;

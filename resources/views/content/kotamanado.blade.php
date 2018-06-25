@@ -50,7 +50,9 @@
 			</div>
 			
 			<div class="col-2">
-				<div class="icontematik" id="tematik"></div>
+				<a id="tematik" href="#" data-toggle="modal" data-target="#fsModal">
+					<div class="icontematik" ></div>
+				</a>
 			</div>
 		</div>
 		
@@ -62,25 +64,25 @@
 			
 			<div class="col-2">
 				<a id="bigdata" href="#" data-toggle="modal" data-target="#fsModal">
-					<div class="iconBigData" id="bigdata"></div>
+					<div class="iconBigData" ></div>
 				</a>
 			</div>
 			
 			<div class="col-2">
 				<a id="banjir" href="#" data-toggle="modal" data-target="#fsModal">
-					<div class="iconBanjir" id="banjir"></div>
+					<div class="iconBanjir" ></div>
 				</a>
 			</div>
 			
 			<div class="col-2">
 				<a id="longsor" href="#" data-toggle="modal" data-target="#fsModal">
-					<div class="iconLongsor" id="longsor"></div>
+					<div class="iconLongsor" ></div>
 				</a>
 			</div>
 			
 			<div class="col-2">
 				<a id="dikomando" href="#" data-toggle="modal" data-target="#fsModal">
-					<div class="icondikomando" id="dikomando"></div>
+					<div class="icondikomando" ></div>
 				</a>
 			</div>
 			
