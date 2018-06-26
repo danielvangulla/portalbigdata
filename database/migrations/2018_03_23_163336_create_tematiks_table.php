@@ -35,8 +35,8 @@ class CreateTematiksTable extends Migration
                 ->on('tematikhargas')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
-            $table->string('lores');
-            $table->string('hires');
+            $table->string('lores')->nullable();
+            $table->string('hires')->nullable();
             $table->string('tingkat');
             $table->string('skala');
             $table->string('sumber');
