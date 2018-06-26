@@ -3,10 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
 
 class HomeController extends Controller
 {
+	
+    public function __construct()
+    {
+        // $this->middleware('auth');
+    }
+
 	
     public function home()
 	{
@@ -38,8 +43,4 @@ class HomeController extends Controller
 		return View('cctv.cctv-home');
 	}
 	
-	public function absensi()
-	{
-		return View('absensi.index');
-	}
 }

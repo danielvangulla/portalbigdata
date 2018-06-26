@@ -1,6 +1,6 @@
 /node_modules
 /public/hot
-/public/storage
+/public/storage/*
 /public/dataGIS/images/foto_bangunan
 /public/dataGIS/images/peta_aggregat_penduduk_manado
 /public/dataGIS/images/peta_tematik

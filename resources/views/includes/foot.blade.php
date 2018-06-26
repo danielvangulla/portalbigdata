@@ -54,6 +54,10 @@
 			$('#embed').attr('src',"http://36.67.90.85/mioc/vAlpha")
 		});
 		
+		$('#tematik').click(function (){
+			$('#embed').attr('src',window.location.origin+"/admin/peta-tematiks")
+		});
+		
 		$(document).ready(function(e) {
 			var lis = $('.nav > li');
 			menu_focus( lis[0], 1 );
