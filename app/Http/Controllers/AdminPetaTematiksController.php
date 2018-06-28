@@ -48,7 +48,7 @@
 			$this->form[] = ['label'=>'Jenis Peta Tematik','name'=>'jenistematiks_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'jenistematiks,jenis'];
 			$this->form[] = ['label'=>'Harga Peta','name'=>'tematikhargas_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'tematikhargas,harga'];
 			$this->form[] = ['label'=>'Peta Resolusi Rendah','name'=>'lores','type'=>'upload','validation'=>'required|image'];
-			$this->form[] = ['label'=>'Peta Resolusi Tinggi','name'=>'hires','type'=>'upload','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Peta Resolusi Tinggi','name'=>'hires','type'=>'upload','validation'=>'required|max:50000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Tingkat','name'=>'tingkat','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Skala','name'=>'skala','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Sumber','name'=>'sumber','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
